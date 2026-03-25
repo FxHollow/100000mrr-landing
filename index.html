@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Integration Consulting | 100000MRR</title>
+    <meta name="description" content="Help businesses leverage AI to reduce costs and increase efficiency - from strategy to implementation in 4 weeks">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a2e;
+            background: #fff;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 80px 0 60px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero .subtitle {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .hero .cta-button {
+            display: inline-block;
+            background: #e94560;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .hero .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(233, 69, 96, 0.4);
+        }
+
+        .hero .cta-secondary {
+            display: inline-block;
+            margin-top: 15px;
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+        .hero .cta-secondary:hover {
+            color: white;
+        }
+
+        /* Value Props */
+        .value-props {
+            padding: 60px 0;
+            background: #f8f9fa;
+        }
+
+        .value-props-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .value-prop {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .value-prop h3 {
+            color: #1a1a2e;
+            margin-bottom: 12px;
+            font-size: 1.2rem;
+        }
+
+        .value-prop p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        .value-prop .icon {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        /* Services */
+        .services {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            color: #1a1a2e;
+            margin-bottom: 15px;
+        }
+
+        .section-title p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+        }
+
+        .service {
+            border: 1px solid #eee;
+            border-radius: 12px;
+            padding: 35px;
+            transition: box-shadow 0.2s;
+        }
+
+        .service:hover {
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .service h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: #1a1a2e;
+        }
+
+        .service .price {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #e94560;
+            margin-bottom: 20px;
+        }
+
+        .service ul {
+            list-style: none;
+            margin-bottom: 25px;
+        }
+
+        .service li {
+            padding: 8px 0;
+            color: #555;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .service li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #e94560;
+            font-weight: bold;
+        }
+
+        /* Process */
+        .process {
+            background: #1a1a2e;
+            color: white;
+            padding: 80px 0;
+        }
+
+        .process .section-title h2 {
+            color: white;
+        }
+
+        .process .section-title p {
+            color: rgba(255,255,255,0.7);
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .process-step {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .process-step .number {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: #e94560;
+            border-radius: 50%;
+            line-height: 50px;
+            font-weight: 700;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .process-step h4 {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .process-step p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Social Proof */
+        .social-proof {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .stat {
+            padding: 20px;
+        }
+
+        .stat .number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #e94560;
+        }
+
+        .stat .label {
+            color: #666;
+            margin-top: 5px;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #e94560 0%, #c23a51 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .cta-section p {
+            opacity: 0.95;
+            margin-bottom: 25px;
+        }
+
+        .cta-section .cta-button {
+            background: white;
+            color: #e94560;
+            padding: 15px 40px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            display: inline-block;
+            transition: transform 0.2s;
+        }
+
+        .cta-section .cta-button:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        .footer {
+            background: #1a1a2e;
+            color: rgba(255,255,255,0.7);
+            padding: 30px 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .process-steps {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>AI Integration Consulting</h1>
+            <p class="subtitle">Help businesses leverage AI to reduce costs and increase efficiency — from strategy to implementation in 4 weeks</p>
+            <a href="#contact" class="cta-button">Book Free Consultation</a>
+            <br>
+            <a href="#services" style="color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.95rem;">View our services ↓</a>
+        </div>
+    </section>
+
+    <!-- Value Props -->
+    <section class="value-props">
+        <div class="container">
+            <div class="value-props-grid">
+                <div class="value-prop">
+                    <div class="icon">🚀</div>
+                    <h3>Fast Delivery</h3>
+                    <p>4-week delivery vs 3-6 months from traditional agencies. Get results quickly.</p>
+                </div>
+                <div class="value-prop">
+                    <div class="icon">📈</div>
+                    <h3>ROI Focused</h3>
+                    <p>We measure success by your business outcomes, not just technology deployment.</p>
+                </div>
+                <div class="value-prop">
+                    <div class="icon">🛠️</div>
+                    <h3>Full Service</h3>
+                    <p>Strategy + implementation + training. We don't leave you hanging.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>Practical AI solutions for real business challenges</p>
+            </div>
+            <div class="services-grid">
+                <div class="service">
+                    <h3>AI/LLM Integration Consulting</h3>
+                    <p class="price">¥30,000 - ¥80,000</p>
+                    <ul>
+                        <li>Business process analysis</li>
+                        <li>AI opportunity assessment</li>
+                        <li>LLM API integration strategy</li>
+                        <li>Custom workflow automation</li>
+                        <li>Team training & documentation</li>
+                    </ul>
+                    <a href="#contact" style="color: #e94560; text-decoration: none; font-weight: 600;">Learn more →</a>
+                </div>
+                <div class="service">
+                    <h3>Custom Software Development</h3>
+                    <p class="price">¥50,000 - ¥150,000</p>
+                    <ul>
+                        <li>MVP development for startups</li>
+                        <li>Full-stack web applications</li>
+                        <li>API development & integration</li>
+                        <li>System modernization</li>
+                        <li>Ongoing maintenance & support</li>
+                    </ul>
+                    <a href="#contact" style="color: #e94560; text-decoration: none; font-weight: 600;">Learn more →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="process">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Process</h2>
+                <p>From discovery to delivery in 4 weeks</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="number">1</div>
+                    <h4>Discovery</h4>
+                    <p>Deep dive into your business challenges and goals</p>
+                </div>
+                <div class="process-step">
+                    <div class="number">2</div>
+                    <h4>Strategy</h4>
+                    <p>Tailored AI roadmap with clear ROI projections</p>
+                </div>
+                <div class="process-step">
+                    <div class="number">3</div>
+                    <h4>Build</h4>
+                    <p>Rapid implementation with weekly check-ins</p>
+                </div>
+                <div class="process-step">
+                    <div class="number">4</div>
+                    <h4>Launch</h4>
+                    <p>Deploy, train team, and measure results</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="social-proof">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Us</h2>
+            </div>
+            <div class="stats-grid">
+                <div class="stat">
+                    <div class="number">4</div>
+                    <div class="label">Weeks to Delivery</div>
+                </div>
+                <div class="stat">
+                    <div class="number">50%</div>
+                    <div class="label">Cost Savings</div>
+                </div>
+                <div class="stat">
+                    <div class="number">100%</div>
+                    <div class="label">Project Success</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <h2>Ready to Transform Your Business?</h2>
+            <p>Book a free 30-minute consultation to discuss your AI opportunities</p>
+            <a href="https://wechat.com" class="cta-button">Add Us on WeChat</a>
+            <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">
+                Or email us: hello@100000mrr.com
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 100000MRR. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="#">Privacy Policy</a> |
+                <a href="#">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
