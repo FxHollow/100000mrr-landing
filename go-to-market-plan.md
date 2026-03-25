@@ -184,3 +184,67 @@
 *Last updated: 2026-03-25*
 *Owner: CMO*
 *Aligned with: CTO Product Strategy v1*
+
+---
+
+## Appendix: Product Manager Input (Added 2026-03-25)
+
+### Pricing Strategy Recommendations
+
+#### AI/LLM Integration Consulting
+
+| Package | Price | Scope | Target Customer |
+|---------|-------|-------|-----------------|
+| **Discovery** | 5k RMB | 1-week assessment, AI opportunity audit, roadmap | All prospects (credited to project) |
+| **Starter** | 30k RMB | Single AI integration, 2-week delivery | Small businesses, first AI project |
+| **Professional** | 50k RMB | Multi-system integration, 4-week delivery | Tech-enabled SMEs |
+| **Enterprise** | 80k+ RMB | Full AI transformation, 6-8 weeks | E-commerce, agencies |
+
+#### Custom Software Development
+
+| Package | Price | Scope | Target Customer |
+|---------|-------|-------|-----------------|
+| **MVP Basic** | 50k RMB | Single platform, core features, 4 weeks | Early-stage startups |
+| **MVP Plus** | 80k RMB | Web + mobile, integrations, 6 weeks | Funded startups |
+| **Full Product** | 150k+ RMB | Multi-platform, scalable arch, 8-12 weeks | Serious ventures |
+
+### Service Packaging Recommendations
+
+1. **Always start with Discovery** (5k RMB, 1 week)
+   - Low-risk entry point for customers
+   - Builds trust before larger engagement
+   - Creates clear scope for proposal
+   - Fee credited to subsequent project
+
+2. **Fixed-price with clear scope**
+   - Chinese SMEs prefer predictable pricing
+   - Use SOW templates to prevent scope creep
+   - Change orders for out-of-scope work
+
+3. **Payment terms**
+   - 50% upfront, 50% on delivery
+   - For 80k+ projects: 40/30/30 milestone billing
+
+### Value Proposition by Segment
+
+**E-commerce Companies**:
+> "Reduce customer service costs by 60% with AI chatbots + auto-generate 100 product descriptions in 5 minutes"
+
+**Professional Services**:
+> "Deliver AI projects to your clients without hiring - we're your white-label AI team"
+
+**Tech SMEs**:
+> "Integrate AI into your existing tools in 4 weeks - no disruption, measurable ROI"
+
+### Proposal Template Structure
+
+1. Executive Summary (their problem in their words)
+2. Current State Analysis (from Discovery)
+3. Proposed Solution (specific deliverables)
+4. Timeline (week-by-week breakdown)
+5. Investment (clear pricing, payment terms)
+6. Expected ROI (quantified benefits)
+7. Case Study (relevant example)
+8. Next Steps (clear call to action)
+
+---

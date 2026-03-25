@@ -6,6 +6,60 @@ Understand target customers to inform product development and marketing strategy
 
 ---
 
+## Product Manager Notes (Added 2026-03-25)
+
+### Priority Segments for AI Consulting Service
+
+Based on CTO product strategy, focusing on **AI/LLM Integration Consulting** first:
+
+| Segment | Priority | Why | Expected Deal Size |
+|---------|----------|-----|-------------------|
+| Tech-enabled SMEs (10-50 employees) | High | Have budget, feel AI pressure, need practical help | 30k-50k RMB |
+| E-commerce companies | High | Direct ROI from AI (customer service, content) | 40k-80k RMB |
+| Professional services (agencies, consultancies) | Medium | Can use AI internally + resell to clients | 30k-60k RMB |
+| Manufacturing/Traditional business | Low | Longer sales cycle, education needed | 50k-100k RMB |
+
+### Interview Priorities (First 10)
+
+1. **5 e-commerce company owners** - Validate AI use cases (customer service automation, content generation, product description)
+2. **3 agency owners** - Validate white-label AI service opportunity
+3. **2 tech SME CTOs** - Validate technical pain points, budget availability
+
+### Key Questions to Validate
+
+1. What specific AI tasks would save you most time/money?
+2. What's your current monthly spend on tools/automation?
+3. Have you tried any AI solutions? What worked/didn't?
+4. What would make you choose a consultant vs. DIY?
+5. What's your decision process for a 30k-50k RMB project?
+
+---
+
+## Findings Log (PM to Populate)
+
+### Interview Template
+
+**Date**: YYYY-MM-DD
+**Company**: [Name, size, industry]
+**Interviewee**: [Role]
+
+**Current State**:
+- Tools currently using:
+- Biggest pain points:
+- AI awareness level:
+
+**Opportunity**:
+- Tasks that could be automated:
+- Estimated time/cost savings:
+- Budget availability:
+
+**Next Steps**:
+- Follow-up needed:
+- Proposal opportunity: Y/N
+- Estimated deal size:
+
+---
+
 ## Primary Research Plan
 
 ### Customer Interviews (Target: 10-15 interviews)

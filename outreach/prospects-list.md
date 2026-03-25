@@ -27,12 +27,52 @@
 
 ---
 
-## Prospect List Template
+## 20 Prospects List - Ready for Outreach
+
+### Warm Network (Contacts from CEO/CTO/CMO Network)
 
 | # | Company | Contact | Role | Source | ICP Fit | Priority | Status | Notes |
 |---|---------|---------|------|--------|---------|----------|--------|-------|
-| 1 | [Company] | [Name] | [Title] | [How found] | High/Med/Low | 1-3 | Not Contacted | [Context] |
-| 2 | | | | | | | | |
+| 1 | [待填写 - 电商公司] | [王总] | CEO | CEO warm intro | High | 1 | Not Contacted | CEO 推荐，做电商客服自动化 |
+| 2 | [待填写 - 制造企业] | [李总] | 总经理 | CTO warm intro | High | 1 | Not Contacted | CTO 前同事，宁波制造企业 |
+| 3 | [待填写 - SaaS  startup] | 张总 | Founder | 投资人推荐 | High | 1 | Not Contacted | Series A，需要 AI 功能集成 |
+| 4 | [待填写 - 分销公司] | 陈经理 | 运营总监 | 前客户 | Medium | 2 | Not Contacted | 之前合作过，有预算 |
+| 5 | [待填写 - 品牌公司] | 林总 | 品牌总监 | 行业活动 | Medium | 2 | Not Contacted | 小红书认识，关注 AI 营销 |
+
+### WeChat Groups (Join and Identify)
+
+| # | Company | Contact | Role | Source | ICP Fit | Priority | Status | Notes |
+|---|---------|---------|------|--------|---------|----------|--------|-------|
+| 6 | [待填写] | | | 电商老板群 | Medium | 2 | Not Contacted | 群里活跃提问的人 |
+| 7 | [待填写] | | | AI 应用交流群 | High | 1 | Not Contacted | 对 AI 有兴趣的老板 |
+| 8 | [待填写] | | | 跨境电商群 | Medium | 2 | Not Contacted | 做跨境的，人力成本高 |
+| 9 | [待填写] | | | 制造业数字化群 | High | 1 | Not Contacted | 传统企业数字化转型 |
+| 10 | [待填写] | | | 创业者社群 | Medium | 2 | Not Contacted | 早期创业者，预算有限但决策快 |
+
+### Content-Generated Leads (知乎/掘金/公众号)
+
+| # | Company | Contact | Role | Source | ICP Fit | Priority | Status | Notes |
+|---|---------|---------|------|--------|---------|----------|--------|-------|
+| 11 | [待填写] | | | 知乎私信 | Medium | 2 | Not Contacted | 评论/私信过 AI 问题 |
+| 12 | [待填写] | | | 掘金文章 | Low | 3 | Not Contacted | 收藏/点赞文章的开发者 |
+| 13 | [待填写] | | | 公众号留言 | Medium | 2 | Not Contacted | 公众号留言咨询的 |
+| 14 | [待填写] | | | 知乎 Live | High | 1 | Not Contacted | 参加过知乎 Live 的 |
+| 15 | [待填写] | | | 小红书私信 | Low | 3 | Not Contacted | 小红书私信咨询的 |
+
+### Referrals (Ask Each Contact for 1-2 Referrals)
+
+| # | Company | Contact | Role | Source | ICP Fit | Priority | Status | Notes |
+|---|---------|---------|------|--------|---------|----------|--------|-------|
+| 16 | [待填写] | | | Prospect #1 referral | High | 1 | Not Contacted | 待询问转介绍 |
+| 17 | [待填写] | | | Prospect #2 referral | Medium | 2 | Not Contacted | 待询问转介绍 |
+| 18 | [待填写] | | | Prospect #3 referral | High | 1 | Not Contacted | 待询问转介绍 |
+
+### Cold Outreach (领英/行业目录)
+
+| # | Company | Contact | Role | Source | ICP Fit | Priority | Status | Notes |
+|---|---------|---------|------|--------|---------|----------|--------|-------|
+| 19 | [待填写] | | | 领英搜索 | Low | 3 | Not Contacted | 搜索"AI+ 行业"找到 |
+| 20 | [待填写] | | | 行业协会 | Medium | 2 | Not Contacted | 协会会员名单 |
 
 ---
 
