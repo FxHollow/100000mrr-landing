@@ -155,50 +155,44 @@ See [`cto/TECHNICAL-STANDARDS.md`](./TECHNICAL-STANDARDS.md) for:
 
 ---
 
-### 2026-03-27 - Swagger API Docs Complete
+### 2026-03-27 - Landing Page B2C Redesign Complete
 
-**Status**: Green - Backend Phase 2 progressing ahead of schedule
+**Status**: Green - Frontend landing page ready, backend Swagger docs complete
 
 **Backend Status:** ✅ PHASE 2 IN PROGRESS
 
-**New Additions:**
-- **Swagger API Documentation** at `/docs`
-- `swagger.js` script for auto-generation
-- `swagger-output.json` for generated spec
-- Swagger UI Express integration in main app
+**Completed:**
+- Swagger API Documentation at `/docs`
+- Full B2C course platform API
+- Auth, Users, Courses routes
+- Prisma schema for B2C platform
 
-**Complete API Endpoints:**
-| Module | Endpoints | Access |
-|--------|-----------|--------|
-| Auth | register, login, me, refresh, logout | Public/Auth |
-| Users | list, get, update, delete | ADMIN+ |
-| Courses | list, details, my, enroll, create, update | Public/Admin |
-
-**Package.json Updates:**
-- Added `swagger-ui-express` ^5.0.0
-- Added `swagger-autogen` ^2.23.7
-- Added `npm run swagger` script
-
-**Frontend Status:** ✅ LANDING PAGE READY
+**Frontend Status:** ✅ LANDING PAGE COMPLETE
 
 **Landing Page (B2C Course Design):**
-- Hero section with Chinese copy
-- Pain points section (4 scenarios)
-- Value propositions (4 cards)
-- Course contents (8 items)
-- 3-tier pricing (¥99/¥299/¥999)
-- Testimonials (3 cards)
-- FAQ section (5 questions)
-- CTA with WeChat contact
+- ✅ Hero section with Chinese copy "AI 技能提升计划"
+- ✅ Pain points section (4 scenarios):
+  - 担心被 AI 淘汰
+  - 信息太多学不会
+  - 学了用不上
+  - 没时间学习
+- ✅ Value propositions (4 cards)
+- ✅ Course contents (8 items)
+- ✅ 3-tier pricing (¥99/¥299/¥999)
+- ✅ Testimonials (3 cards)
+- ✅ FAQ section (5 questions)
+- ✅ Mobile responsive design
+- ✅ Gradient styling (purple theme)
 
 **Pending:**
-- Baidu Analytics ID (TODO in index.html)
-- WeChat contact info (TODO in index.html)
+- 🟡 Deploy to Vercel/GitHub Pages
+- 🟡 Baidu Analytics ID (TODO comment in index.html line 13)
+- 🟡 WeChat contact info (TODO in CTA section)
 
 **CTO Actions:**
-- Reviewed Swagger integration
-- Confirmed API documentation complete
-- Verified landing page B2C redesign
+- Reviewed landing page B2C redesign
+- Confirmed Swagger API docs complete
+- Verified mobile-responsive design
 
 **Week 2 Priorities (Updated):**
 1. Backend: PostgreSQL connection + Prisma migration test
