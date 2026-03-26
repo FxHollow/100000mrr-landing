@@ -155,58 +155,57 @@ See [`cto/TECHNICAL-STANDARDS.md`](./TECHNICAL-STANDARDS.md) for:
 
 ---
 
-### 2026-03-26 - Night Update (Course API Complete)
+### 2026-03-27 - Swagger API Docs Complete
 
-**Status**: Green - Backend Phase 2 started, Course API complete
+**Status**: Green - Backend Phase 2 progressing ahead of schedule
 
-**Backend Status:** ✅ PHASE 2 STARTED
+**Backend Status:** ✅ PHASE 2 IN PROGRESS
 
-**New Additions (Courses API):**
-- **Course Routes** (`/api/v1/courses`):
-  - `GET /` - List all published courses (public)
-  - `GET /:slug` - Get course details by slug (public)
-  - `GET /my` - Get enrolled courses (auth required)
-  - `POST /:id/enroll` - Enroll in course (auth required)
-  - `POST /` - Create course (ADMIN+)
-  - `PATCH /:id` - Update course (ADMIN+)
+**New Additions:**
+- **Swagger API Documentation** at `/docs`
+- `swagger.js` script for auto-generation
+- `swagger-output.json` for generated spec
+- Swagger UI Express integration in main app
 
-**Schema Updates:**
-- Course, Chapter, Lesson models
-- Enrollment, CourseProgress, LessonProgress models
-- Order, OrderItem models for payments
-- Article model for content management
+**Complete API Endpoints:**
+| Module | Endpoints | Access |
+|--------|-----------|--------|
+| Auth | register, login, me, refresh, logout | Public/Auth |
+| Users | list, get, update, delete | ADMIN+ |
+| Courses | list, details, my, enroll, create, update | Public/Admin |
 
-**Security Review - Course API:**
-- ✅ Public endpoints for course browsing
-- ✅ Auth required for enrollment and progress tracking
-- ✅ Admin-only for course management
-- ✅ Cascade deletes configured for referential integrity
-- ✅ Unique constraints on enrollments and progress
+**Package.json Updates:**
+- Added `swagger-ui-express` ^5.0.0
+- Added `swagger-autogen` ^2.23.7
+- Added `npm run swagger` script
 
-**Tech Stack Compliance:**
-- ✅ Prisma schema follows conventions
-- ✅ RBAC middleware applied to admin routes
-- ✅ Structured logging on all operations
-- ✅ Standard response format
+**Frontend Status:** ✅ LANDING PAGE READY
 
-**Frontend Status:** 🟡 READY TO DEPLOY
-- Landing page has TODO comments for:
-  - Baidu Analytics ID
-  - WeChat contact info
-  - Email contact
+**Landing Page (B2C Course Design):**
+- Hero section with Chinese copy
+- Pain points section (4 scenarios)
+- Value propositions (4 cards)
+- Course contents (8 items)
+- 3-tier pricing (¥99/¥299/¥999)
+- Testimonials (3 cards)
+- FAQ section (5 questions)
+- CTA with WeChat contact
+
+**Pending:**
+- Baidu Analytics ID (TODO in index.html)
+- WeChat contact info (TODO in index.html)
 
 **CTO Actions:**
-- Reviewed course API implementation
-- Confirmed schema design supports B2C course platform
-- Verified enrollment flow logic
+- Reviewed Swagger integration
+- Confirmed API documentation complete
+- Verified landing page B2C redesign
 
 **Week 2 Priorities (Updated):**
-1. Backend: PostgreSQL connection + Prisma migration
-2. Backend: API documentation (Swagger/OpenAPI)
-3. Backend: Payment integration (WeChat Pay / Alipay)
-4. Frontend: Deploy landing page
-5. Frontend: Begin React component library
+1. Backend: PostgreSQL connection + Prisma migration test
+2. Backend: Payment integration planning (WeChat Pay/Alipay)
+3. Frontend: Deploy landing page to Vercel
+4. Frontend: Add analytics + contact info
 
 ---
 
-*Last updated: 2026-03-26*
+*Last updated: 2026-03-27*
