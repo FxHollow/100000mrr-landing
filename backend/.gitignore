@@ -40,4 +40,4 @@ swagger-output.json
 postman-collection.json
 
 # Agent config
-../.agents/
+.agents/
