@@ -3,6 +3,8 @@ const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('../swagger-output.json');
 const { logger } = require('./utils/logger');
 
 const app = express();
@@ -73,6 +75,13 @@ app.get('/health', (req, res) => {
     }
   });
 });
+
+// Swagger API Documentation
+app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument, {
+  explorer: true,
+  customCss: '.swagger-ui .topbar { display: none }',
+  customSiteTitle: '100000MRR API Docs'
+}));
 
 // API routes
 const authRoutes = require('./routes/auth');
