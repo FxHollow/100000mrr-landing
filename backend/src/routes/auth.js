@@ -1,5 +1,5 @@
 const express = require('express');
-const { registerUser, loginUser, getUserById } = require('../services/authService');
+const { registerUser, loginUser, getUserById, refreshAccessToken, logoutUser } = require('../services/authService');
 const { authMiddleware } = require('../middleware/auth');
 const { logger } = require('../utils/logger');
 
@@ -141,6 +141,71 @@ router.get('/me', authMiddleware, async (req, res) => {
     res.json(result);
   } catch (error) {
     logger.error('Get profile route error:', error);
+    res.status(500).json({
+      success: false,
+      error: {
+        code: 'INTERNAL_ERROR',
+        message: 'An unexpected error occurred.'
+      }
+    });
+  }
+});
+
+/**
+ * POST /api/v1/auth/refresh
+ * Refresh access token using refresh token
+ */
+router.post('/refresh', async (req, res) => {
+  try {
+    const { refreshToken } = req.body;
+
+    if (!refreshToken) {
+      return res.status(400).json({
+        success: false,
+        error: {
+          code: 'VALIDATION_ERROR',
+          message: 'Refresh token is required.',
+          details: [{ field: 'refreshToken', message: 'Refresh token is required' }]
+        }
+      });
+    }
+
+    const result = await refreshAccessToken(refreshToken);
+
+    if (!result.success) {
+      const status = result.error.code === 'INVALID_REFRESH_TOKEN' || result.error.code === 'REFRESH_TOKEN_EXPIRED' ? 401 : 500;
+      return res.status(status).json(result);
+    }
+
+    res.json(result);
+  } catch (error) {
+    logger.error('Refresh token route error:', error);
+    res.status(500).json({
+      success: false,
+      error: {
+        code: 'INTERNAL_ERROR',
+        message: 'An unexpected error occurred.'
+      }
+    });
+  }
+});
+
+/**
+ * POST /api/v1/auth/logout
+ * Logout user (requires authentication)
+ */
+router.post('/logout', authMiddleware, async (req, res) => {
+  try {
+    const { refreshToken } = req.body;
+    const result = await logoutUser(req.user.id, refreshToken);
+
+    if (!result.success) {
+      return res.status(500).json(result);
+    }
+
+    res.json(result);
+  } catch (error) {
+    logger.error('Logout route error:', error);
     res.status(500).json({
       success: false,
       error: {

@@ -76,7 +76,10 @@ app.get('/health', (req, res) => {
 
 // API routes
 const authRoutes = require('./routes/auth');
+const usersRoutes = require('./routes/users');
+
 app.use(`/api/${API_VERSION}/auth`, authLimiter, authRoutes);
+app.use(`/api/${API_VERSION}/users`, usersRoutes);
 
 // API info endpoint
 app.get(`/api/${API_VERSION}`, (req, res) => {
@@ -90,7 +93,15 @@ app.get(`/api/${API_VERSION}`, (req, res) => {
         auth: {
           register: `POST /api/${API_VERSION}/auth/register`,
           login: `POST /api/${API_VERSION}/auth/login`,
-          profile: `GET /api/${API_VERSION}/auth/me`
+          profile: `GET /api/${API_VERSION}/auth/me`,
+          refresh: `POST /api/${API_VERSION}/auth/refresh`,
+          logout: `POST /api/${API_VERSION}/auth/logout`
+        },
+        users: {
+          list: `GET /api/${API_VERSION}/users (admin)`,
+          get: `GET /api/${API_VERSION}/users/:id (admin)`,
+          update: `PATCH /api/${API_VERSION}/users/:id (admin)`,
+          delete: `DELETE /api/${API_VERSION}/users/:id (super admin)`
         }
       }
     }

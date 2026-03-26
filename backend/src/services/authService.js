@@ -189,4 +189,92 @@ const getUserById = async (userId) => {
   }
 };
 
-module.exports = { registerUser, loginUser, getUserById };
+// Refresh access token using refresh token
+const refreshAccessToken = async (refreshToken) => {
+  try {
+    // Verify refresh token
+    const decoded = jwt.verify(refreshToken, process.env.JWT_REFRESH_SECRET);
+
+    // Get user to ensure they still exist and are active
+    const user = await prisma.user.findUnique({
+      where: { id: decoded.userId },
+      select: {
+        id: true,
+        email: true,
+        role: true,
+        name: true
+      }
+    });
+
+    if (!user) {
+      return {
+        success: false,
+        error: {
+          code: 'USER_NOT_FOUND',
+          message: 'User no longer exists.'
+        }
+      };
+    }
+
+    // Generate new access token
+    const newToken = generateToken(user);
+
+    logger.info('Access token refreshed', { userId: user.id });
+
+    return {
+      success: true,
+      data: {
+        token: newToken
+      }
+    };
+  } catch (error) {
+    if (error.name === 'TokenExpiredError') {
+      return {
+        success: false,
+        error: {
+          code: 'REFRESH_TOKEN_EXPIRED',
+          message: 'Refresh token has expired. Please log in again.'
+        }
+      };
+    }
+
+    logger.error('Refresh token error:', error);
+    return {
+      success: false,
+      error: {
+        code: 'INVALID_REFRESH_TOKEN',
+        message: 'Invalid refresh token.'
+      }
+    };
+  }
+};
+
+// Logout user (for token blacklisting - requires Redis for production)
+const logoutUser = async (userId, refreshToken = null) => {
+  try {
+    // In production with Redis, you would:
+    // 1. Add token to blacklist with TTL
+    // 2. Store token jti in database for persistent blacklist
+
+    // For now, just log the logout
+    logger.info('User logged out', { userId });
+
+    return {
+      success: true,
+      data: {
+        message: 'Logout successful'
+      }
+    };
+  } catch (error) {
+    logger.error('Logout error:', error);
+    return {
+      success: false,
+      error: {
+        code: 'LOGOUT_FAILED',
+        message: 'Failed to process logout.'
+      }
+    };
+  }
+};
+
+module.exports = { registerUser, loginUser, getUserById, refreshAccessToken, logoutUser };

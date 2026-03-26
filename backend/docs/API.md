@@ -120,6 +120,203 @@ Authorization: Bearer <token>
 
 ---
 
+### Refresh Access Token
+
+```http
+POST /api/v1/auth/refresh
+Content-Type: application/json
+```
+
+**Request Body:**
+```json
+{
+  "refreshToken": "eyJhbGc..."
+}
+```
+
+**Response (200 OK):**
+```json
+{
+  "success": true,
+  "data": {
+    "token": "eyJhbGc..."
+  }
+}
+```
+
+**Error Responses:**
+
+| Code | Status | Description |
+|------|--------|-------------|
+| `VALIDATION_ERROR` | 400 | Missing refresh token |
+| `REFRESH_TOKEN_EXPIRED` | 401 | Refresh token expired |
+| `INVALID_REFRESH_TOKEN` | 401 | Invalid refresh token |
+
+---
+
+### Logout
+
+```http
+POST /api/v1/auth/logout
+Authorization: Bearer <token>
+Content-Type: application/json
+```
+
+**Request Body:**
+```json
+{
+  "refreshToken": "eyJhbGc..."
+}
+```
+
+**Response (200 OK):**
+```json
+{
+  "success": true,
+  "data": {
+    "message": "Logout successful"
+  }
+}
+```
+
+---
+
+## User Management (Admin Only)
+
+All user management endpoints require authentication and admin roles.
+
+### List Users
+
+```http
+GET /api/v1/users?page=1&limit=10&search=john&role=USER
+Authorization: Bearer <token>
+```
+
+**Query Parameters:**
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| page | integer | 1 | Page number |
+| limit | integer | 10 | Items per page |
+| search | string | - | Search email/name |
+| role | string | - | Filter by role |
+
+**Response (200 OK):**
+```json
+{
+  "success": true,
+  "data": [
+    {
+      "id": "uuid-here",
+      "email": "user@example.com",
+      "name": "John Doe",
+      "role": "USER",
+      "createdAt": "2026-03-26T00:00:00.000Z",
+      "updatedAt": "2026-03-26T00:00:00.000Z"
+    }
+  ],
+  "meta": {
+    "page": 1,
+    "limit": 10,
+    "total": 50,
+    "totalPages": 5
+  }
+}
+```
+
+**Required Role:** ADMIN, SUPER_ADMIN
+
+---
+
+### Get User by ID
+
+```http
+GET /api/v1/users/:id
+Authorization: Bearer <token>
+```
+
+**Response (200 OK):**
+```json
+{
+  "success": true,
+  "data": {
+    "id": "uuid-here",
+    "email": "user@example.com",
+    "name": "John Doe",
+    "role": "USER",
+    "createdAt": "2026-03-26T00:00:00.000Z",
+    "updatedAt": "2026-03-26T00:00:00.000Z"
+  }
+}
+```
+
+**Required Role:** ADMIN, SUPER_ADMIN
+
+---
+
+### Update User
+
+```http
+PATCH /api/v1/users/:id
+Authorization: Bearer <token>
+Content-Type: application/json
+```
+
+**Request Body:**
+```json
+{
+  "name": "Updated Name",
+  "role": "ADMIN"
+}
+```
+
+**Response (200 OK):**
+```json
+{
+  "success": true,
+  "data": {
+    "id": "uuid-here",
+    "email": "user@example.com",
+    "name": "Updated Name",
+    "role": "ADMIN",
+    "createdAt": "2026-03-26T00:00:00.000Z",
+    "updatedAt": "2026-03-26T00:00:00.000Z"
+  }
+}
+```
+
+**Required Role:** ADMIN, SUPER_ADMIN
+
+---
+
+### Delete User
+
+```http
+DELETE /api/v1/users/:id
+Authorization: Bearer <token>
+```
+
+**Response (200 OK):**
+```json
+{
+  "success": true,
+  "data": {
+    "message": "User deleted successfully."
+  }
+}
+```
+
+**Required Role:** SUPER_ADMIN only
+
+**Error Responses:**
+
+| Code | Status | Description |
+|------|--------|-------------|
+| `INVALID_OPERATION` | 400 | Cannot delete own account |
+| `USER_NOT_FOUND` | 404 | User not found |
+| `FORBIDDEN` | 403 | Insufficient permissions |
+
+---
+
 ## Rate Limiting
 
 | Endpoint | Limit | Window |
