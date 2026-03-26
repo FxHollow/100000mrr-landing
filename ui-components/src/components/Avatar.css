@@ -1,0 +1,69 @@
+/* Avatar Base Styles */
+.avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  overflow: hidden;
+  background: var(--bg-muted);
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Size Variants */
+.avatar-sm {
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+}
+
+.avatar-md {
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+}
+
+.avatar-lg {
+  width: 56px;
+  height: 56px;
+  font-size: 22px;
+}
+
+/* Avatar Image */
+.avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Fallback Initials */
+.avatar-fallback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-hover) 100%);
+  color: white;
+}
+
+/* Avatar with Border */
+.avatar-bordered {
+  border: 2px solid var(--bg);
+}
+
+/* Avatar Group (for multiple avatars) */
+.avatar-group {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.avatar-group .avatar {
+  margin-left: -8px;
+  border: 2px solid var(--bg);
+}
+
+.avatar-group .avatar:last-child {
+  margin-left: 0;
+}
