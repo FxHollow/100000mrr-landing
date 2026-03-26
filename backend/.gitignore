@@ -34,3 +34,10 @@ coverage/
 # Build
 dist/
 build/
+
+# Generated API docs
+swagger-output.json
+postman-collection.json
+
+# Agent config
+../.agents/
