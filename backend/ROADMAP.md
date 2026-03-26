@@ -3,58 +3,82 @@
 **Owner**: 后端工程师 (Backend Engineer)
 **Reports to**: CTO
 **Created**: 2026-03-26
+**Updated**: 2026-03-26 (Phase 1 Complete)
 
 ---
 
-## Phase 1: Immediate (Week 1-2)
+## Phase 1: Immediate (Week 1-2) ✅ COMPLETE
 
-### Project Foundation
-- [ ] Set up Node.js/Python project structure
-- [ ] Configure package.json / requirements.txt
-- [ ] Set up ESLint/Prettier or Black/ruff
-- [ ] Configure environment variables (.env.example)
-- [ ] Set up Docker development container
+### Project Foundation ✅
+- [x] Set up Node.js/Python project structure
+- [x] Configure package.json / requirements.txt
+- [x] Set up ESLint/Prettier or Black/ruff
+- [x] Configure environment variables (.env.example)
+- [x] Set up Docker development container
 
-### Database Setup
-- [ ] PostgreSQL local development setup
-- [ ] Database schema design (users, organizations, core entities)
-- [ ] Migration system (Prisma/TypeORM or Alembic)
-- [ ] Seed data for development
+### Database Setup ✅
+- [x] PostgreSQL local development setup
+- [x] Database schema design (users, organizations, core entities)
+- [x] Migration system (Prisma/TypeORM or Alembic)
+- [x] Seed data for development
 
-### Core API Structure
-- [ ] Express/Fastify or FastAPI setup
-- [ ] Health check endpoint
-- [ ] Error handling middleware
-- [ ] Request logging
-- [ ] CORS configuration
+### Core API Structure ✅
+- [x] Express/Fastify or FastAPI setup
+- [x] Health check endpoint
+- [x] Error handling middleware
+- [x] Request logging
+- [x] CORS configuration
 
-**Deliverable**: Running backend with database + health endpoint
+### Authentication & Authorization ✅
+- [x] User registration/login API
+- [x] JWT token management
+- [x] Password hashing (bcrypt)
+- [x] Role-based access control (RBAC)
+- [x] Token refresh + logout
+
+### User Management ✅
+- [x] List users with pagination/filtering
+- [x] Get user by ID
+- [x] Update user
+- [x] Delete user (SUPER_ADMIN only)
+
+### Course Management (B2C) ✅
+- [x] List published courses (public)
+- [x] Get course details by slug
+- [x] Get enrolled courses (auth required)
+- [x] Enroll in course
+- [x] Create/update course (ADMIN+)
+
+**Deliverable**: ✅ Complete - Running backend with auth + user management + course APIs
 
 ---
 
-## Phase 2: Short-term (Week 3-4)
+## Phase 2: Short-term (Week 3-4) - CURRENT
 
-### Authentication & Authorization
-- [ ] User registration/login API
-- [ ] JWT token management
-- [ ] Password hashing (bcrypt/argon2)
-- [ ] Role-based access control (RBAC)
-- [ ] API key management (for integrations)
+### API Documentation
+- [ ] OpenAPI/Swagger spec generation
+- [ ] Swagger UI at `/docs`
+- [ ] Postman collection export
+- [ ] API changelog
 
-### Core Business APIs
-- [ ] User management endpoints
-- [ ] Organization/tenant management
-- [ ] Basic CRUD for core entities
-- [ ] Input validation (Zod/Pydantic)
-- [ ] Rate limiting
+### Database Connection
+- [ ] PostgreSQL production connection
+- [ ] Prisma migration testing
+- [ ] Database seeding scripts
 
-### Developer Experience
-- [ ] API documentation (OpenAPI/Swagger)
-- [ ] Postman collection
-- [ ] Local development scripts
-- [ ] Docker Compose for full stack
+### Payment Integration (B2C)
+- [ ] WeChat Pay integration
+- [ ] Alipay integration
+- [ ] Order management API
+- [ ] Payment webhook handling
 
-**Deliverable**: Auth system + documented APIs
+### Testing
+- [ ] Unit tests for auth module
+- [ ] Integration tests for user API
+- [ ] Integration tests for course API
+- [ ] Test coverage report
+
+**Deliverable**: API documentation + database connected + payment ready
 
 ---
 
