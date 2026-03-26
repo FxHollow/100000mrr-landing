@@ -1,6 +1,6 @@
 # CMO 执行摘要 - Week 2 就绪
 
-**更新日期**: 2026-03-26
+**更新日期**: 2026-03-29
 **状态**: ✅ Ready to Execute
 **启动日期**: Apr 1, 2026
 
@@ -13,8 +13,8 @@
 | B2C 转型 | ✅ 完成 | AI 技能提升计划 (30 天实战课) |
 | 内容创作 | ✅ 完成 | 10 篇小红书 + 5 篇知乎 |
 | 执行文档 | ✅ 完成 | Day 1-7 详细指南 |
-| Landing Page | ✅ 待部署 | 待 CEO 提供微信 ID |
-| CEO 支持项 | 🔴 待提供 | 微信 ID + 收款码 |
+| Landing Page | ✅ 已部署 | https://FxHollow.github.io/100000mrr-landing/ |
+| CEO 支持项 | 🟡 部分完成 | 微信号已提供，待收款码 |
 
 ---
 
@@ -32,10 +32,12 @@ Git 提交：10+ commits
 
 | 类别 | 文件 | 状态 |
 |------|------|------|
-| **Landing Page** | `landing-page/index.html` | ✅ Ready |
+| **Landing Page** | `landing-page/index.html` | ✅ 已部署 |
 | **部署指南** | `cmo/landing-page-deployment-guide.md` | ✅ Ready |
 | **小红书笔记** | `content-articles/xiaohongshu/notes-1-10.md` | ✅ Ready |
 | **知乎回答** | `content-articles/zhihu/answers-1-5.md` | ✅ Ready |
+| **抖音脚本** | `cmo/douyin-scripts-c2c.md` | ✅ Ready |
+| **B 站脚本** | `cmo/bilibili-scripts-c2c.md` | ✅ Ready |
 | **Day 1 Checklist** | `cmo/week2-day1-checklist.md` | ✅ Ready |
 | **Daily Guides** | `cmo/week2-daily-guides.md` | ✅ Ready |
 | **Status Report** | `cmo/week2-status-report.md` | ✅ Ready |
@@ -75,9 +77,9 @@ Day 7 (4/7)  周总结       │ 战报 + 周报提交
 
 ### 🔴 高优先级 (Week 2 启动前)
 
-- [ ] CEO 提供微信咨询账号
+- [x] CEO 提供微信咨询账号
 - [ ] CEO 配置收款码/支付方式
-- [ ] 部署 Landing Page 到 Vercel/GitHub
+- [x] 部署 Landing Page 到 GitHub Pages
 
 ### 🟡 中优先级 (Week 2 期间)
 
@@ -119,7 +121,7 @@ Day 7 (4/7)  周总结       │ 战报 + 周报提交
 
 | 事项 | 状态 | 截止 |
 |------|------|------|
-| 微信 ID 设置 | 🔴 Pending | Mar 28 |
+| 微信 ID 设置 | ✅ Complete | Mar 28 |
 | 支付设置 | 🔴 Pending | Mar 30 |
 | Warm intro | 🟡 Template ready | Mar 29 |
 | 朋友圈首发 | 🟡 Pending | Mar 31 |
@@ -179,15 +181,17 @@ df77c6d feat: Add Week 1 summary report
 
 ## 下一步行动
 
+**已完成确认**:
+1. 微信咨询账号 ✅ 已提供
+2. Landing Page ✅ 已部署到 GitHub Pages
+
 **等待 CEO 确认**:
-1. 微信咨询账号 → 用于 landing page 和私域引流
-2. 收款码/支付方式 → 用于课程收费
+1. 收款码/支付方式 → 用于课程收费
 
 **一旦确认，立即执行**:
-1. 部署 landing page 到 Vercel/GitHub
-2. 发布第一篇小红书笔记
-3. 加入 5 个 AI/职场微信群
-4. 朋友圈首发宣传
+1. 发布第一篇小红书笔记
+2. 加入 5 个 AI/职场微信群
+3. 朋友圈首发宣传
 
 ---
 
