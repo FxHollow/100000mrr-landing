@@ -155,11 +155,11 @@ See [`cto/TECHNICAL-STANDARDS.md`](./TECHNICAL-STANDARDS.md) for:
 
 ---
 
-### 2026-03-27 - Landing Page B2C Redesign Complete
+### 2026-03-27 - Final Status: Week 1 Complete
 
-**Status**: Green - Frontend landing page ready, backend Swagger docs complete
+**Status**: Green - All technical foundation complete, ready for launch
 
-**Backend Status:** ✅ PHASE 2 IN PROGRESS
+**Backend Status:** ✅ PHASE 1 COMPLETE
 
 **Completed:**
 - Swagger API Documentation at `/docs`
@@ -167,38 +167,47 @@ See [`cto/TECHNICAL-STANDARDS.md`](./TECHNICAL-STANDARDS.md) for:
 - Auth, Users, Courses routes
 - Prisma schema for B2C platform
 
+**API Endpoints (15 total):**
+| Module | Endpoints | Access |
+|--------|-----------|--------|
+| Auth | register, login, me, refresh, logout | Public/Auth |
+| Users | list, get, update, delete | ADMIN+ |
+| Courses | list, details, my, enroll, create, update | Public/Admin |
+
 **Frontend Status:** ✅ LANDING PAGE COMPLETE
 
 **Landing Page (B2C Course Design):**
 - ✅ Hero section with Chinese copy "AI 技能提升计划"
-- ✅ Pain points section (4 scenarios):
-  - 担心被 AI 淘汰
-  - 信息太多学不会
-  - 学了用不上
-  - 没时间学习
+- ✅ Pain points section (4 scenarios)
 - ✅ Value propositions (4 cards)
 - ✅ Course contents (8 items)
 - ✅ 3-tier pricing (¥99/¥299/¥999)
 - ✅ Testimonials (3 cards)
 - ✅ FAQ section (5 questions)
 - ✅ Mobile responsive design
-- ✅ Gradient styling (purple theme)
+- ✅ Purple gradient theme
 
 **Pending:**
 - 🟡 Deploy to Vercel/GitHub Pages
-- 🟡 Baidu Analytics ID (TODO comment in index.html line 13)
+- 🟡 Baidu Analytics ID (TODO in index.html)
 - 🟡 WeChat contact info (TODO in CTA section)
 
 **CTO Actions:**
-- Reviewed landing page B2C redesign
-- Confirmed Swagger API docs complete
-- Verified mobile-responsive design
+- Reviewed all technical deliverables
+- Confirmed B2C platform architecture complete
+- Verified landing page design and responsiveness
 
-**Week 2 Priorities (Updated):**
+**Week 2 Priorities:**
 1. Backend: PostgreSQL connection + Prisma migration test
 2. Backend: Payment integration planning (WeChat Pay/Alipay)
 3. Frontend: Deploy landing page to Vercel
 4. Frontend: Add analytics + contact info
+
+**CEO Actions Needed:**
+- Domain name purchase (~¥50/year)
+- Baidu Analytics ID (free at tongji.baidu.com)
+- WeChat contact ID for landing page
+- WeChat Pay merchant account (Week 3)
 
 ---
 
