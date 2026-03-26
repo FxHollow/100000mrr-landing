@@ -2,7 +2,7 @@
 
 **日期**: 2026-03-26
 **状态**: ✅ Week 2 Execution Ready
-**资产完成**: 35 个营销/销售文件
+**资产完成**: 37 个营销/销售文件
 
 ---
 
@@ -27,7 +27,8 @@
 ### 1. Landing Page
 - **主页面**: 专业服务落地页 (中英双语)
 - **部署**: GitHub Pages / Vercel / Netlify 三合一指南
-- **状态**: Git repo 初始化完成，待部署上线
+- **状态**: ✅ 已部署到 GitHub Pages (https://github.com/FxHollow/100000mrr-landing)
+- **待办**: 替换 Baidu Analytics ID 和 WeChat 联系信息
 
 ### 2. 内容库 (4 篇核心文章)
 | 文章 | 标题 | 字数 | 平台版本 |
