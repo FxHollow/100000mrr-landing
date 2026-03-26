@@ -1,131 +1,176 @@
-# AI Integration Consulting Services
+# AI 技能提升计划 - 课程介绍
 
-## 100000MRR - Business Services One-Pager
-
----
-
-## 🎯 Our Mission
-
-Help businesses leverage AI to reduce costs and increase efficiency — **from strategy to implementation in 4 weeks**.
+## 100000MRR - 消费者 AI 教育课程
 
 ---
 
-## 💼 Service Offerings
+## 🎯 课程使命
 
-### 1. AI/LLM Integration Consulting
-
-**Investment:** ¥30,000 - ¥80,000 per project
-**Timeline:** 4 weeks
-
-**What You Get:**
-- ✅ Business process analysis & AI opportunity assessment
-- ✅ LLM API integration strategy tailored to your needs
-- ✅ Custom workflow automation design
-- ✅ Implementation roadmap with clear milestones
-- ✅ Team training and documentation
-
-**Ideal For:** SMEs looking to automate operations, reduce manual work, and cut costs using AI/LLM technologies.
+**让普通人也能掌握 AI 工具，提升工作效率，开启副业收入**
 
 ---
 
-### 2. Custom Software Development
+## 💼 课程方案
 
-**Investment:** ¥50,000 - ¥150,000 per project
-**Timeline:** 6-12 weeks
+### 1. 🌱 自学版 - ¥99
 
-**What You Get:**
-- ✅ MVP development for startups
-- ✅ Full-stack web applications
-- ✅ API development & third-party integrations
-- ✅ System modernization and optimization
-- ✅ Ongoing maintenance & support options
+**适合人群**: 有自律性，想低成本入门 AI 的学习者
 
-**Ideal For:** Startups and businesses needing custom software solutions built with modern, scalable technology.
+**课程内容包括**:
+- ✅ 全部视频课程（20+ 节，每节 10-20 分钟）
+- ✅ 课程资料包（PDF 笔记、工具清单）
+- ✅ 提示词模板库（50+ 实用模板）
+- ✅ 永久回看权限
+- ✅ 课程更新免费享受
 
----
-
-## 🚀 Why Choose Us?
-
-| Factor | Traditional Agencies | 100000MRR |
-|--------|---------------------|-----------|
-| **Delivery Time** | 3-6 months | **4 weeks** |
-| **Cost** | ¥200,000+ | **¥30,000 - ¥150,000** |
-| **Focus** | Technology features | **Business ROI** |
-| **Engagement** | Strategy only | **Strategy + Implementation** |
-| **Communication** | Account managers | **Direct expert access** |
+**学习周期**: 自行安排，建议 4 周完成
 
 ---
 
-## 📋 Our 4-Week Process
+### 2. 🚀 实战版 - ¥299 ⭐ 最受欢迎
 
-### Week 1: Discovery
-- Deep dive into your business challenges
-- Stakeholder interviews
-- Current system audit
-- Success metric definition
+**适合人群**: 需要指导和陪伴，想真正掌握 AI 能力的学习者
 
-### Week 2: Strategy
-- AI opportunity mapping
-- Technical architecture design
-- ROI projection model
-- Implementation roadmap
+**课程内容包括**:
+- ✅ 自学版全部内容
+- ✅ 社群答疑（30 天）
+- ✅ 作业批改 + 1v1 点评
+- ✅ 结业证书
+- ✅ 副业资源对接
+- ✅ 直播加餐（每月 2 次）
 
-### Week 3-4: Build & Launch
-- Rapid prototype development
-- Integration with existing systems
-- Team training sessions
-- Go-live support
+**学习周期**: 4 周系统学习 + 实战练习
+
+**额外福利**:
+- 前 100 名送价值 ¥199 提示词秘籍
+- 优秀学员推荐副业机会
 
 ---
 
-## 📊 Expected Outcomes
+### 3. 💎 VIP 版 - ¥999
 
-Based on our engagements:
+**适合人群**: 想深度发展 AI 副业或职业转型的学习者
 
-- **50%+ reduction** in manual processing time
-- **20+ hours/week** saved on repetitive tasks
-- **3-6 month** ROI payback period
-- **100% project** success rate
+**课程内容包括**:
+- ✅ 实战版全部内容
+- ✅ 1v1 个人咨询（2 小时）
+- ✅ 副业项目全程指导
+- ✅ 终身社群权限
+- ✅ 内推机会（合作企业）
+- ✅ 线下活动优先参与权
 
----
+**学习周期**: 4 周集中学习 + 长期辅导
 
-## 💰 Engagement Terms
-
-- **50% upfront**, 50% on delivery
-- **Clear SOW** with defined deliverables
-- **Weekly check-ins** throughout project
-- **30-day post-launch** support included
-
----
-
-## 📞 Next Steps
-
-### Book a Free 30-Minute Consultation
-
-We'll discuss:
-- Your current business challenges
-- Potential AI automation opportunities
-- Expected ROI and timeline
-- Whether we're a good fit
-
-**Contact:**
-- 📧 Email: hello@100000mrr.com
-- 💬 WeChat: [Add our WeChat Official Account]
-- 🌐 Website: [Landing page URL]
+**额外福利**:
+- 优先参与线下沙龙/工作坊
+- 优秀学员合作机会
 
 ---
 
-## 🔒 Confidentiality Guaranteed
+## 🚀 为什么选择我们？
 
-All consultations and project details are kept strictly confidential. We're happy to sign an NDA before any detailed discussions.
+| 对比项 | 网上免费教程 | 其他付费课程 | 100000MRR |
+|--------|-------------|-------------|-----------|
+| **内容质量** | 参差不齐 | 理论为主 | ✅ 实战导向 |
+| **学习方式** | 碎片化 | 录播为主 | ✅ 录播 + 直播 + 社群 |
+| **答疑支持** | 无 | 有限 | ✅ 30 天社群答疑 |
+| **作业反馈** | 无 | 批量点评 | ✅ 1v1 批改 |
+| **变现指导** | 无 | 很少涉及 | ✅ 完整副业路径 |
+| **价格** | 免费 | ¥500-2000 | ✅ ¥99 起 |
+
+---
+
+## 📋 4 周学习路径
+
+### 第 1 周：AI 工具入门
+- 主流 AI 工具对比与选择
+- 账号注册与环境配置
+- 基础提示词技巧
+- 实战：用 AI 完成第一份文档
+
+### 第 2 周：办公效率提升
+- 用 AI 写周报/总结/方案
+- 用 AI 处理 Excel/数据
+- 用 AI 生成 PPT 大纲
+- 实战：自动化你的日常工作
+
+### 第 3 周：内容创作实战
+- 用 AI 写公众号/小红书
+- 用 AI 生成短视频脚本
+- 用 AI 做图文内容
+- 实战：从 0 到 1 运营自媒体
+
+### 第 4 周：副业变现路径
+- AI 技能变现方式盘点
+- 如何接私活（平台/渠道）
+- 知识付费入门指南
+- 实战：完成第一个变现项目
+
+---
+
+## 📊 学员成果
+
+完成课程后，你将能够：
+
+- **工作效率提升 50%+** - 用 AI 自动化重复工作
+- **掌握 10+ AI 工具** - 熟练使用主流 AI 产品
+- **输出 5+ 实战作品** - 积累可展示的作品集
+- **开启副业收入** - 平均学员副业收入 ¥2000-10000/月
+
+---
+
+## 💰 报名条款
+
+- **支付方式**: 微信/支付宝
+- **退款政策**: 开课后 7 天内，学完第一节不满意可全额退款
+- **课程有效期**: 永久有效，持续更新
+- **社群服务**: 实战版 30 天，VIP 版终身
+
+---
+
+## 📞 报名方式
+
+### 方式一：微信咨询
+- 添加微信号：[待填写]
+- 备注"AI 课程"
+- 获取课程详情 + 优惠信息
+
+### 方式二：邮件咨询
+- 发送邮件：hello@100000mrr.com
+- 主题：AI 课程报名
+- 24 小时内回复
+
+### 方式三：直接报名
+- 微信/支付宝扫码支付
+- 发送支付截图至微信/邮箱
+- 获取课程链接 + 入群邀请
+
+---
+
+## 🔒 隐私保障
+
+- 学员信息严格保密
+- 课程内容仅供个人学习
+- 不向第三方出售或分享数据
+
+---
+
+## ❓ 常见问题
+
+**Q: 我没有技术背景，能学会吗？**
+A: 完全可以！课程专为零基础设计，不需要任何编程基础。
+
+**Q: 每天需要花多少时间？**
+A: 建议每天 30-60 分钟，周末 2-3 小时完成实战练习。
+
+**Q: 学完后真的能赚钱吗？**
+A: 课程提供完整变现路径，但收入取决于个人努力。我们会提供资源对接和指导。
+
+**Q: 课程是直播还是录播？**
+A: 核心课程是录播（永久回看），定期有直播答疑（可看回放）。
 
 ---
 
 *© 2026 100000MRR. All rights reserved.*
 
----
-
-**To convert this to PDF:**
-1. Open in any Markdown editor (Typora, VS Code with Markdown PDF extension)
-2. Export as PDF
-3. Or use: `pandoc service-one-pager.md -o service-one-pager.pdf`
+*Last updated: 2026-03-26 | B2C Pivot*

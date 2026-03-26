@@ -1,250 +1,269 @@
-# Go-to-Market Execution Plan
+# Go-to-Market 执行计划
 
-## Aligned with CTO Product Strategy (2026-03-25)
-
-**Revenue Target**: 100k RMB/month
-**Strategy**: Hybrid model (Service → Product transition)
+## B2C 消费者 AI 教育课程版 (2026-03-26)
 
 ---
 
-## Phase 1: Service Revenue (Months 1-3)
-
-**Target**: 50k RMB/month from consulting services
-
-### Service Offerings
-
-#### 1. AI/LLM Integration Consulting
-- **Offering**: Help SMEs integrate AI/LLM APIs into workflows
-- **Pricing**: 30k-80k RMB per project
-- **Target**: 2-3 projects/month
-- **Revenue**: 50k-100k RMB/month potential
-
-#### 2. Custom Software Development
-- **Offering**: Full-stack MVP development for startups
-- **Pricing**: 50k-150k RMB per project
-- **Target**: 1-2 projects/month
-- **Revenue**: 50k-100k RMB/month potential
-
-### Marketing Actions (Immediate)
-
-#### Week 1-2: Foundation
-- [ ] Create landing page for consulting services
-- [ ] Set up WeChat Official Account
-- [ ] Create service brochures (PDF/WeChat articles)
-- [ ] Define ideal customer profiles (ICPs)
-
-#### Week 3-4: Lead Generation
-- [ ] Publish 3-5 thought leadership articles on AI integration
-- [ ] Join 5-10 relevant WeChat groups/communities
-- [ ] Reach out to 20 potential customers (warm + cold)
-- [ ] Create case study template
-
-#### Week 5-8: Pipeline Building
-- [ ] Close first 1-2 consulting projects
-- [ ] Document delivery process for case studies
-- [ ] Start referral program
-- [ ] Test paid ads (WeChat/Baidu) - small budget
-
-### Channels & Tactics
-
-| Channel | Effort | Expected ROI | Timeline |
-|---------|--------|--------------|----------|
-| WeChat articles | Medium | High (long-term) | 2-4 weeks |
-| Community outreach | Low | Medium | Immediate |
-| Direct outreach | High | High | Immediate |
-| Paid ads | Low | Test phase | 1-2 weeks |
-| Referrals | Low | Very High | 4+ weeks |
+**收入目标**: 10 万人民币/月
+**策略**: 课程销售 + 会员订阅 + 1v1 咨询
 
 ---
 
-## Phase 2: Product Revenue (Months 3-12)
+## 产品定位
 
-**Target**: 50k-100k RMB/month recurring
+### 核心产品：AI 技能提升计划
 
-### Product Options (TBD based on consulting patterns)
+**目标用户**:
+- 25-40 岁职场人士，担心被 AI 淘汰
+- 想学 AI 但不知道从哪开始
+- 希望提升工作效率或开启副业
 
-#### Option A: Vertical SaaS
-- **Target**: 50-100 customers @ 1000 RMB avg
-- **Marketing**: Industry events, partnerships, content
-
-#### Option B: Developer Tools
-- **Target**: 200-500 customers globally
-- **Marketing**: Product Hunt, dev communities, SEO
-
-#### Option C: Content/Membership
-- **Target**: 200-500 members @ 99-299 RMB/month
-- **Marketing**: Content funnel, social proof, community
-
-### Marketing Actions (Medium-term)
-
-- [ ] Build email list from consulting clients
-- [ ] Create product waitlist landing page
-- [ ] Develop content marketing engine
-- [ ] Establish partnerships for distribution
+**价值主张**:
+> "30 天掌握 AI 工具，让工作效率翻倍，开启副业收入"
 
 ---
 
-## Messaging Framework
+## 产品矩阵
 
-### Value Proposition (Services)
-"Help businesses leverage AI to reduce costs and increase efficiency - from strategy to implementation in 4 weeks"
+### 1. 引流产品（免费）
+- 公众号/小红书 AI 技巧文章
+- 短视频平台 AI 教程
+- 免费直播公开课
+- AI 工具清单/提示词模板
 
-### Value Proposition (Products)
-"Building tools that solve real problems we've encountered serving 50+ businesses"
+### 2. 入门产品（¥99）
+- 自学版课程
+- 全部视频 + 资料包
+- 目标：降低决策门槛
 
-### Proof Points to Build
-- Client logos and testimonials
-- Before/after metrics
-- Case studies with specific ROI
+### 3. 核心产品（¥299）
+- 实战版课程
+- 社群 + 作业批改
+- 目标：主力收入来源
 
----
-
-## 30-Day Marketing Calendar
-
-### Week 1 (Mar 25-31)
-- [ ] Landing page live
-- [ ] WeChat Official Account setup
-- [ ] First article published: "5 AI Integration Wins for Chinese SMEs"
-- [ ] Join 5 industry WeChat groups
-
-### Week 2 (Apr 1-7)
-- [ ] Second article: "How to Choose the Right LLM for Your Business"
-- [ ] Direct outreach: 10 prospects
-- [ ] Create service one-pager PDF
-
-### Week 3 (Apr 8-14)
-- [ ] Third article: "Case Study: AI Automation Saves 20 Hours/Week"
-- [ ] Direct outreach: 10 more prospects
-- [ ] Start WeChat group discussions
-
-### Week 4 (Apr 15-21)
-- [ ] Fourth article: "ROI Calculator for AI Projects"
-- [ ] Follow up with all prospects
-- [ ] Close first project (target)
+### 4. 高客单产品（¥999）
+- VIP 版课程
+- 1v1 咨询 + 副业指导
+- 目标：高价值用户变现
 
 ---
 
-## Metrics Dashboard
+## 第一阶段：冷启动（第 1-2 周）
 
-### Weekly Tracking
+**目标**: 验证产品，获取第一批付费用户
 
-| Metric | Week 1 | Week 2 | Week 3 | Week 4 | Target |
-|--------|--------|--------|--------|--------|--------|
-| Website visitors | - | - | - | - | 500/mo |
-| WeChat followers | - | - | - | - | 200/mo |
-| Leads generated | - | - | - | - | 20/mo |
-| Calls booked | - | - | - | - | 5/mo |
-| Projects closed | - | - | - | - | 2/mo |
-| Revenue | - | - | - | - | 50k/mo |
+### 核心动作
 
-### Conversion Funnel Targets
-- Visitor → Lead: 5%
-- Lead → Call: 25%
-- Call → Close: 40%
+#### 1. 内容矩阵搭建
+- [ ] 公众号/知乎/小红书账号注册
+- [ ] 准备 10 篇 AI 实战文章
+- [ ] 准备 5 个短视频脚本
+- [ ] 制作免费资料包（引流用）
 
----
+#### 2. 第一波流量获取
+- [ ] 加入 10 个 AI 学习/职场提升微信群
+- [ ] 每天在群内分享有价值内容（不发广告）
+- [ ] 朋友圈每日更新 AI 技巧
+- [ ] 私信意向用户邀请试听
 
-## Budget Allocation (Monthly)
-
-| Item | Budget (RMB) | Notes |
-|------|--------------|-------|
-| Website/Hosting | 500 | Landing page, domain |
-| Content Creation | 0 | In-house initially |
-| Paid Ads (test) | 2000 | WeChat/Baidu testing |
-| Tools/Software | 500 | Analytics, CRM |
-| **Total** | **3000** | ~6% of revenue target |
+#### 3. 首期班招生
+- [ ] 目标：招募 20 人体验官（¥99 早鸟价）
+- [ ] 提供额外福利：1v1 学习规划
+- [ ] 收集反馈，优化课程
+- [ ] 积累第一批学员案例
 
 ---
 
-## Competitive Positioning
+## 第二阶段：增长（第 3-8 周）
 
-### AI Consulting Market (China)
-- **Large players**: Expensive, enterprise-focused
-- **Freelancers**: Inconsistent quality, limited scope
-- **Our advantage**: Boutique quality, SME-focused, fast delivery
+**目标**: 建立稳定获客渠道，月收入破 5 万
 
-### Key Differentiators
-1. Speed: 4-week delivery vs 3-6 months
-2. Practical: Focus on ROI, not just technology
-3. Full-service: Strategy + implementation + training
+### 获客渠道
+
+| 渠道 | 投入时间 | 预期获客 | 转化率 | 月收入贡献 |
+|------|----------|----------|--------|------------|
+| 小红书 | 每天 1 小时 | 500 粉丝/周 | 3% | ¥5000 |
+| 知乎 | 每周 3 篇回答 | 200 粉丝/周 | 5% | ¥3000 |
+| 公众号 | 每周 2 篇 | 100 粉丝/周 | 8% | ¥2000 |
+| 微信群 | 每天 2 小时 | 50 人/周 | 10% | ¥5000 |
+| 老带新 | - | 10 人/周 | 30% | ¥3000 |
+| **合计** | - | - | - | **¥18000/周** |
+
+### 核心动作
+
+#### 内容营销
+- [ ] 小红书：每日更新 AI 技巧图文
+- [ ] 知乎：回答"如何学习 AI"相关问题
+- [ ] 公众号：每周 2 篇深度文章
+- [ ] 抖音/视频号：每周 3 条短视频
+
+#### 社群运营
+- [ ] 建立免费 AI 学习交流群
+- [ ] 每周一次群内分享
+- [ ] 定期举办 AI 作品 PK 赛
+- [ ] 优秀学员案例分享
+
+#### 转化优化
+- [ ] 设计 7 天体验营（免费→付费）
+- [ ] 优化课程落地页
+- [ ] 设置限时优惠/拼团
+- [ ] 建立学员见证库
+
+---
+
+## 第三阶段：规模化（第 3-6 月）
+
+**目标**: 月收入稳定 10 万+
+
+### 收入结构
+
+| 产品 | 价格 | 月销量 | 月收入 |
+|------|------|--------|--------|
+| 自学版 | ¥99 | 100 | ¥9,900 |
+| 实战版 | ¥299 | 200 | ¥59,800 |
+| VIP 版 | ¥999 | 30 | ¥29,970 |
+| **合计** | - | - | **¥99,670** |
+
+### 增长策略
+
+1. **KOL 合作**: 与职场/教育类博主合作推广
+2. **企业团购**: 为企业提供内训服务（¥5000+/场）
+3. **分销体系**: 学员推荐返佣 30%
+4. **线下活动**: 举办 AI 实战工作坊（¥299/人）
 
 ---
 
-## Risk Mitigation
+## 营销日历（前 4 周）
 
-| Risk | Mitigation |
-|------|------------|
-| Not enough leads | Increase outreach, test paid channels |
-| Price pressure | Focus on value/ROI, not features |
-| Scope creep | Clear SOW templates, change orders |
-| Cash flow | Require 50% upfront on projects |
+### 第 1 周：预热期
+- [ ] 社交媒体账号搭建完成
+- [ ] 发布 5 篇引流文章
+- [ ] 建立第一个免费学习群
+- [ ] 招募 10 个种子用户
+
+### 第 2 周：首发期
+- [ ] 正式开放报名
+- [ ] 举办首场直播公开课
+- [ ] 限时早鸟价（¥199 原价¥299）
+- [ ] 目标：转化 20 人
+
+### 第 3 周：发酵期
+- [ ] 发布第一批学员反馈
+- [ ] 学员作品展示
+- [ ] 第二场直播答疑
+- [ ] 目标：转化 30 人
+
+### 第 4 周：稳定期
+- [ ] 常态化内容更新
+- [ ] 建立老带新机制
+- [ ] 优化转化漏斗
+- [ ] 目标：转化 50 人
+
+---
+
+## 预算分配（月）
+
+| 项目 | 预算 | 占比 | 说明 |
+|------|------|------|------|
+| 内容制作 | ¥0 | 0% | 自己创作 |
+| 投放测试 | ¥3000 | 30% | 小红书/朋友圈广告 |
+| 工具费用 | ¥500 | 5% | 直播/社群工具 |
+| 分销返佣 | ¥3000 | 30% | 学员推荐奖励 |
+| 预留现金 | ¥3500 | 35% | 应急/机会投放 |
+| **合计** | **¥10000** | **100%** | 约 10% 收入占比 |
 
 ---
 
-*Last updated: 2026-03-25*
-*Owner: CMO*
-*Aligned with: CTO Product Strategy v1*
+## 关键指标追踪
+
+### 每日追踪
+- 各平台新增粉丝数
+- 免费群新增人数
+- 咨询人数
+- 成交单数
+
+### 每周追踪
+- 内容曝光量
+- 直播观看人数
+- 转化率（咨询→付费）
+- 获客成本
+
+### 每月追踪
+- 总收入
+- 各产品收入占比
+- 复购率/续费率
+- 学员满意度
 
 ---
 
-## Appendix: Product Manager Input (Added 2026-03-25)
+## 风险与应对
 
-### Pricing Strategy Recommendations
-
-#### AI/LLM Integration Consulting
-
-| Package | Price | Scope | Target Customer |
-|---------|-------|-------|-----------------|
-| **Discovery** | 5k RMB | 1-week assessment, AI opportunity audit, roadmap | All prospects (credited to project) |
-| **Starter** | 30k RMB | Single AI integration, 2-week delivery | Small businesses, first AI project |
-| **Professional** | 50k RMB | Multi-system integration, 4-week delivery | Tech-enabled SMEs |
-| **Enterprise** | 80k+ RMB | Full AI transformation, 6-8 weeks | E-commerce, agencies |
-
-#### Custom Software Development
-
-| Package | Price | Scope | Target Customer |
-|---------|-------|-------|-----------------|
-| **MVP Basic** | 50k RMB | Single platform, core features, 4 weeks | Early-stage startups |
-| **MVP Plus** | 80k RMB | Web + mobile, integrations, 6 weeks | Funded startups |
-| **Full Product** | 150k+ RMB | Multi-platform, scalable arch, 8-12 weeks | Serious ventures |
-
-### Service Packaging Recommendations
-
-1. **Always start with Discovery** (5k RMB, 1 week)
-   - Low-risk entry point for customers
-   - Builds trust before larger engagement
-   - Creates clear scope for proposal
-   - Fee credited to subsequent project
-
-2. **Fixed-price with clear scope**
-   - Chinese SMEs prefer predictable pricing
-   - Use SOW templates to prevent scope creep
-   - Change orders for out-of-scope work
-
-3. **Payment terms**
-   - 50% upfront, 50% on delivery
-   - For 80k+ projects: 40/30/30 milestone billing
-
-### Value Proposition by Segment
-
-**E-commerce Companies**:
-> "Reduce customer service costs by 60% with AI chatbots + auto-generate 100 product descriptions in 5 minutes"
-
-**Professional Services**:
-> "Deliver AI projects to your clients without hiring - we're your white-label AI team"
-
-**Tech SMEs**:
-> "Integrate AI into your existing tools in 4 weeks - no disruption, measurable ROI"
-
-### Proposal Template Structure
-
-1. Executive Summary (their problem in their words)
-2. Current State Analysis (from Discovery)
-3. Proposed Solution (specific deliverables)
-4. Timeline (week-by-week breakdown)
-5. Investment (clear pricing, payment terms)
-6. Expected ROI (quantified benefits)
-7. Case Study (relevant example)
-8. Next Steps (clear call to action)
+| 风险 | 可能性 | 影响 | 应对措施 |
+|------|--------|------|----------|
+| 流量不足 | 中 | 高 | 加大内容输出，尝试付费投放 |
+| 转化率低 | 中 | 高 | 优化落地页，增加学员见证 |
+| 竞品模仿 | 高 | 中 | 建立品牌壁垒，持续迭代内容 |
+| 学员效果差 | 低 | 高 | 严格筛选学员，加强辅导 |
+| 政策风险 | 低 | 高 | 合规经营，不涉及敏感内容 |
 
 ---
+
+## 成功标准
+
+### 第 1 个月
+- 招收 50+ 付费学员
+- 月收入破¥15,000
+- 积累 10+ 学员成功案例
+
+### 第 3 个月
+- 月收入稳定¥50,000+
+- 建立 3 个稳定获客渠道
+- 学员满意度 90%+
+
+### 第 6 个月
+- 月收入破¥100,000
+- 付费学员累计 500+
+- 品牌在细分领域有知名度
+
+---
+
+*最后更新：2026-03-26（B2C 转向版）*
+*负责人：CEO/CMO*
+
+---
+
+## 附录：执行清单
+
+### 第 1 周详细任务
+
+**Day 1-2: 基建**
+- [ ] 注册公众号/知乎/小红书账号
+- [ ] 设计品牌视觉（logo、配色）
+- [ ] 制作课程落地页
+- [ ] 准备支付收款方式
+
+**Day 3-4: 内容**
+- [ ] 撰写 5 篇引流文章
+- [ ] 制作免费资料包
+- [ ] 准备直播课件
+- [ ] 设计海报/宣传图
+
+**Day 5-7: 引流**
+- [ ] 加入 10 个目标微信群
+- [ ] 发布第一篇公众号文章
+- [ ] 小红书发布 3 篇笔记
+- [ ] 私信 20 个意向用户
+
+---
+
+## 核心思维
+
+> **不要等完美了再开始，先跑起来再优化。**
+
+第一版课程 60 分就可以上线，关键是：
+1. 尽快获取第一批付费用户
+2. 收集真实反馈
+3. 快速迭代优化
+4. 积累成功案例
+
+**行动胜过完美的计划。**
