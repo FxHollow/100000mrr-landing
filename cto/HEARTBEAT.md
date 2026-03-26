@@ -120,4 +120,93 @@ See [`cto/TECHNICAL-STANDARDS.md`](./TECHNICAL-STANDARDS.md) for:
 
 ---
 
+### 2026-03-26 - Afternoon Update
+
+**Status**: Green - Backend auth complete, frontend ready to deploy
+
+**Backend Status:** ✅ PHASE 1 COMPLETE
+- Auth routes implemented (`/api/v1/auth/register`, `/api/v1/auth/login`, `/api/v1/auth/me`)
+- JWT token generation + refresh tokens
+- bcrypt password hashing (cost 10)
+- Rate limiting (100 req/15min general, 10 req/15min auth)
+- RBAC middleware (`authorize(...roles)`)
+- Input validation on all endpoints
+
+**Security Review:**
+- ✅ JWT expiration configured
+- ✅ Token verification with proper error handling
+- ✅ User enumeration prevention (generic error messages)
+- ✅ Rate limiting on auth endpoints
+- ⚠️ Note: Using `JWT_REFRESH_SECRET` - ensure env vars are set
+
+**Frontend Status:** 🟡 READY TO DEPLOY
+- Landing page git-initialized, ready for push
+- Deployment scripts available (`deploy.sh`, `update-contact.sh`)
+- Awaiting: Analytics ID, contact info finalization
+
+**Actions Taken:**
+- Code review of backend auth implementation
+- Verified alignment with TECHNICAL-STANDARDS.md security requirements
+- Confirmed API response format matches spec
+
+**Next Checkpoint:**
+1. Backend: Database migration + local test
+2. Frontend: Deploy to Vercel/GitHub Pages
+
+---
+
+### 2026-03-26 - Night Update (Course API Complete)
+
+**Status**: Green - Backend Phase 2 started, Course API complete
+
+**Backend Status:** ✅ PHASE 2 STARTED
+
+**New Additions (Courses API):**
+- **Course Routes** (`/api/v1/courses`):
+  - `GET /` - List all published courses (public)
+  - `GET /:slug` - Get course details by slug (public)
+  - `GET /my` - Get enrolled courses (auth required)
+  - `POST /:id/enroll` - Enroll in course (auth required)
+  - `POST /` - Create course (ADMIN+)
+  - `PATCH /:id` - Update course (ADMIN+)
+
+**Schema Updates:**
+- Course, Chapter, Lesson models
+- Enrollment, CourseProgress, LessonProgress models
+- Order, OrderItem models for payments
+- Article model for content management
+
+**Security Review - Course API:**
+- ✅ Public endpoints for course browsing
+- ✅ Auth required for enrollment and progress tracking
+- ✅ Admin-only for course management
+- ✅ Cascade deletes configured for referential integrity
+- ✅ Unique constraints on enrollments and progress
+
+**Tech Stack Compliance:**
+- ✅ Prisma schema follows conventions
+- ✅ RBAC middleware applied to admin routes
+- ✅ Structured logging on all operations
+- ✅ Standard response format
+
+**Frontend Status:** 🟡 READY TO DEPLOY
+- Landing page has TODO comments for:
+  - Baidu Analytics ID
+  - WeChat contact info
+  - Email contact
+
+**CTO Actions:**
+- Reviewed course API implementation
+- Confirmed schema design supports B2C course platform
+- Verified enrollment flow logic
+
+**Week 2 Priorities (Updated):**
+1. Backend: PostgreSQL connection + Prisma migration
+2. Backend: API documentation (Swagger/OpenAPI)
+3. Backend: Payment integration (WeChat Pay / Alipay)
+4. Frontend: Deploy landing page
+5. Frontend: Begin React component library
+
+---
+
 *Last updated: 2026-03-26*

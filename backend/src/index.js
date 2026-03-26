@@ -77,16 +77,18 @@ app.get('/health', (req, res) => {
 // API routes
 const authRoutes = require('./routes/auth');
 const usersRoutes = require('./routes/users');
+const coursesRoutes = require('./routes/courses');
 
 app.use(`/api/${API_VERSION}/auth`, authLimiter, authRoutes);
 app.use(`/api/${API_VERSION}/users`, usersRoutes);
+app.use(`/api/${API_VERSION}/courses`, coursesRoutes);
 
 // API info endpoint
 app.get(`/api/${API_VERSION}`, (req, res) => {
   res.json({
     success: true,
     data: {
-      message: '100000MRR API',
+      message: '100000MRR API - B2C Platform',
       version: API_VERSION,
       endpoints: {
         health: '/health',
@@ -102,6 +104,14 @@ app.get(`/api/${API_VERSION}`, (req, res) => {
           get: `GET /api/${API_VERSION}/users/:id (admin)`,
           update: `PATCH /api/${API_VERSION}/users/:id (admin)`,
           delete: `DELETE /api/${API_VERSION}/users/:id (super admin)`
+        },
+        courses: {
+          list: `GET /api/${API_VERSION}/courses (public)`,
+          details: `GET /api/${API_VERSION}/courses/:slug (public)`,
+          myCourses: `GET /api/${API_VERSION}/courses/my (auth)`,
+          enroll: `POST /api/${API_VERSION}/courses/:id/enroll (auth)`,
+          create: `POST /api/${API_VERSION}/courses (admin)`,
+          update: `PATCH /api/${API_VERSION}/courses/:id (admin)`
         }
       }
     }
