@@ -317,6 +317,209 @@ Authorization: Bearer <token>
 
 ---
 
+## Course Management (B2C Platform)
+
+### Public Endpoints
+
+#### List All Courses
+
+```http
+GET /api/v1/courses?page=1&limit=10
+```
+
+**Response (200 OK):**
+```json
+{
+  "success": true,
+  "data": [
+    {
+      "id": "uuid-here",
+      "title": "AI 技能提升计划",
+      "slug": "ai-skills-bootcamp",
+      "description": "30 天掌握 AI 工具",
+      "price": "299.00",
+      "originalPrice": "599.00",
+      "status": "PUBLISHED",
+      "chapters": [
+        {
+          "id": "chapter-uuid",
+          "title": "第一章：AI 工具入门",
+          "order": 1,
+          "lessons": [
+            {
+              "id": "lesson-uuid",
+              "title": "1.1 主流 AI 工具对比",
+              "duration": 600,
+              "isFree": true,
+              "order": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "page": 1,
+    "limit": 10,
+    "total": 5,
+    "totalPages": 1
+  }
+}
+```
+
+---
+
+#### Get Course Details
+
+```http
+GET /api/v1/courses/:slug
+```
+
+**Response (200 OK):**
+```json
+{
+  "success": true,
+  "data": {
+    "id": "uuid-here",
+    "title": "AI 技能提升计划",
+    "slug": "ai-skills-bootcamp",
+    "description": "30 天掌握 AI 工具，让工作效率翻倍",
+    "price": "299.00",
+    "originalPrice": "599.00",
+    "thumbnail": "https://...",
+    "status": "PUBLISHED",
+    "chapters": [...]
+  }
+}
+```
+
+**Error Responses:**
+
+| Code | Status | Description |
+|------|--------|-------------|
+| `COURSE_NOT_FOUND` | 404 | Course not found |
+
+---
+
+### Authenticated Endpoints
+
+#### Get My Enrolled Courses
+
+```http
+GET /api/v1/courses/my
+Authorization: Bearer <token>
+```
+
+**Response (200 OK):**
+```json
+{
+  "success": true,
+  "data": [
+    {
+      "id": "enrollment-uuid",
+      "userId": "user-uuid",
+      "courseId": "course-uuid",
+      "status": "ACTIVE",
+      "createdAt": "2026-03-26T00:00:00.000Z",
+      "course": {
+        "id": "course-uuid",
+        "title": "AI 技能提升计划",
+        "slug": "ai-skills-bootcamp",
+        "progress": {
+          "progressPercent": 45,
+          "completedAt": null
+        }
+      }
+    }
+  ]
+}
+```
+
+---
+
+#### Enroll in Course
+
+```http
+POST /api/v1/courses/:id/enroll
+Authorization: Bearer <token>
+Content-Type: application/json
+```
+
+**Response (201 Created):**
+```json
+{
+  "success": true,
+  "data": {
+    "id": "enrollment-uuid",
+    "userId": "user-uuid",
+    "courseId": "course-uuid",
+    "status": "ACTIVE",
+    "course": {
+      "id": "course-uuid",
+      "title": "AI 技能提升计划",
+      "slug": "ai-skills-bootcamp"
+    }
+  }
+}
+```
+
+**Error Responses:**
+
+| Code | Status | Description |
+|------|--------|-------------|
+| `COURSE_NOT_FOUND` | 404 | Course not found |
+| `COURSE_NOT_AVAILABLE` | 400 | Course not published |
+| `ALREADY_ENROLLED` | 400 | Already enrolled |
+
+---
+
+### Admin Endpoints
+
+#### Create Course
+
+```http
+POST /api/v1/courses
+Authorization: Bearer <token>
+Content-Type: application/json
+```
+
+**Request Body:**
+```json
+{
+  "title": "AI 技能提升计划",
+  "slug": "ai-skills-bootcamp",
+  "description": "30 天掌握 AI 工具",
+  "price": 299,
+  "originalPrice": 599,
+  "thumbnail": "https://..."
+}
+```
+
+**Required Role:** ADMIN, SUPER_ADMIN
+
+---
+
+#### Update Course
+
+```http
+PATCH /api/v1/courses/:id
+Authorization: Bearer <token>
+Content-Type: application/json
+```
+
+**Request Body:**
+```json
+{
+  "title": "Updated Title",
+  "price": 199,
+  "status": "PUBLISHED"
+}
+```
+
+**Required Role:** ADMIN, SUPER_ADMIN
+
+---
+
 ## Rate Limiting
 
 | Endpoint | Limit | Window |
