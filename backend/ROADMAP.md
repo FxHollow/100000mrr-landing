@@ -164,11 +164,13 @@
 
 | Metric | Target | Current |
 |--------|--------|---------|
-| Backend repo initialized | ✅ | Pending |
-| Health endpoint responding | ✅ | Pending |
-| Database connected | ✅ | Pending |
-| Auth API functional | ✅ | Pending |
-| API docs generated | ✅ | Pending |
+| Backend repo initialized | ✅ | ✅ Done |
+| Health endpoint responding | ✅ | ✅ Done |
+| Database connected | ✅ | 🟡 Pending prod |
+| Auth API functional | ✅ | ✅ Done |
+| User management API | ✅ | ✅ Done |
+| Course API functional | ✅ | ✅ Done |
+| API docs generated | Week 2 | Pending |
 | Test coverage | >70% | 0% |
 
 ---
@@ -218,9 +220,10 @@
 
 ## Next Steps
 
-1. **This week**: Set up project structure + database
-2. **Next week**: Implement health check + basic CRUD
-3. **Week 3**: Authentication system
+1. **This week**: PostgreSQL connection + Prisma migration test
+2. **Next week**: Swagger API documentation
+3. **Week 3**: Payment integration (WeChat Pay/Alipay)
+4. **Week 4**: Unit + integration tests
 
 ---
 
