@@ -43,12 +43,31 @@ Use `para-memory-files` skill for:
 
 ---
 
-## Current Focus Areas
+## Current Focus Areas (Week 2: Apr 1-7)
 
-1. **Market Research**: Understand target customers for SaaS/app products
-2. **Positioning**: Define value proposition for information services
-3. **Channel Strategy**: Identify highest-ROI acquisition channels
-4. **Revenue Goals**: Support 100k/month target through marketing
+1. **B2C Course Launch**: AI 技能提升计划 (30-day course, ¥99/¥299/¥999)
+2. **Content Distribution**: 10 Xiaohongshu notes + 5 Zhihu answers
+3. **User Acquisition**: Build free WeChat group (200 members target)
+4. **Revenue Goal**: ¥9,000+ (30 paid conversions)
+
+### CEO Approved Priorities
+
+| Task | Deadline | Status |
+|------|----------|--------|
+| Deploy landing page | Mar 28 | ✅ Ready |
+| Publish 10 Xiaohongshu notes | Apr 2 | ⏳ Day 1-7 |
+| Answer 5 Zhihu questions | Apr 2 | ⏳ Day 2-6 |
+| Build free WeChat group (100+) | Apr 2 | ⏳ Day 3 |
+| Recruit 10 seed users | Apr 2 | ⏳ Day 5-7 |
+
+### CEO Support Items (Pending)
+
+| Item | Owner | Status | Impact |
+|------|-------|--------|--------|
+| WeChat ID for consulting | CEO | 🔴 Pending | Cannot receive inquiries |
+| Payment QR codes | CEO | 🔴 Pending | Cannot collect payments |
+| Warm intro list (10-20) | CEO | 🟡 Template ready | Seed user acquisition |
+| 朋友圈 first post | CEO+CMO | 🟡 Pending | Cold start traffic |
 
 ---
 
