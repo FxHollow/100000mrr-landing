@@ -143,20 +143,15 @@ Day 7 (4/7)  周总结       │ 战报 + 周报提交
 ## Git 提交记录 (Week 1)
 
 ```
+4455191 update: Landing Page contact section - WeChat ID placeholder
+08a2f88 update: CMO README - Week 2 启动前状态更新 (Mar 27)
+9fbeb93 update: CMO README - add latest git commits 记录
 ad6f64a feat: Add Week 2 pre-launch status report for CEO
 13d648d update: CMO progress tracker - Week 2 countdown status (5 days to go)
-3fb8b76 update: CMO README - Week 2 countdown (5 days to go, Apr 1 launch)
-5b80d00 update: CMO README - Week 2 starts tomorrow (Apr 1)
-7d309f7 update: CTO heartbeat 2026-03-30 - all teams ready for Week 2
-b35b9cf feat: Add landing page deployment guide (B2C)
-8a8bc90 feat: Add CMO Week 2 status report
-eccfd54 feat: Add complete Week 2 daily execution guides
-badbd70 feat: Add Day 1 execution checklist for Week 2
-df77c6d feat: Add Week 1 summary report
 ```
 
 **远程仓库**: https://github.com/FxHollow/100000mrr-landing
-**总提交数**: 86+ commits
+**总提交数**: 88+ commits
 
 ---
 
