@@ -143,15 +143,15 @@ Day 7 (4/7)  周总结       │ 战报 + 周报提交
 ## Git 提交记录 (Week 1-2)
 
 ```
+bc53ba8 update: CMO README - update git commit history
 dde372c update: CMO README - update git commit history
 c14764d update: CMO README - update git commit history
 4d17476 update: CMO README - update git commit history
 91f2235 update: CMO README - update git commit history
-7383ecf update: CMO README - update git commit history
 ```
 
 **远程仓库**: https://github.com/FxHollow/100000mrr-landing
-**总提交数**: 117+ commits
+**总提交数**: 118+ commits
 
 ---
 
