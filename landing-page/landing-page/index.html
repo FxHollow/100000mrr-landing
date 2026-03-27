@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 技能提升计划 | 100000MRR</title>
+    <meta name="description" content="普通人也能学会的 AI 实战课 - 30 天掌握 AI 工具，提升工作效率，开启副业收入">
+    <!-- Baidu Analytics - TODO: Replace with actual ID from https://tongji.baidu.com/ -->
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?"; // TODO: Add your Baidu Analytics ID
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    <!-- End Baidu Analytics -->
+    <!-- Google Analytics - TODO: Add if needed -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a2e;
+            background: #fff;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0 60px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero .subtitle {
+            font-size: 1.25rem;
+            opacity: 0.95;
+            max-width: 600px;
+            margin: 0 auto 30px;
+            line-height: 1.8;
+        }
+
+        .hero .highlight {
+            background: rgba(255,255,255,0.2);
+            padding: 3px 12px;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+
+        .hero .cta-button {
+            display: inline-block;
+            background: #fbbf24;
+            color: #1a1a2e;
+            padding: 15px 40px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .hero .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(251, 191, 36, 0.4);
+        }
+
+        .hero .cta-secondary {
+            display: inline-block;
+            margin-top: 15px;
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+        .hero .cta-secondary:hover {
+            color: white;
+        }
+
+        /* Pain Points Section */
+        .pain-points {
+            padding: 60px 0;
+            background: #fef3c7;
+        }
+
+        .pain-points-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .pain-point {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            border-left: 4px solid #f59e0b;
+        }
+
+        .pain-point h3 {
+            color: #1a1a2e;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .pain-point p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        /* Value Props */
+        .value-props {
+            padding: 60px 0;
+            background: #f0f9ff;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            color: #1a1a2e;
+            margin-bottom: 15px;
+        }
+
+        .section-title p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .value-props-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .value-prop {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .value-prop h3 {
+            color: #1a1a2e;
+            margin-bottom: 12px;
+            font-size: 1.2rem;
+        }
+
+        .value-prop p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        .value-prop .icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        /* What You Get */
+        .what-you-get {
+            padding: 80px 0;
+        }
+
+        .get-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .get-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 20px;
+            background: #f9fafb;
+            border-radius: 10px;
+        }
+
+        .get-item .check {
+            flex-shrink: 0;
+            width: 28px;
+            height: 28px;
+            background: #10b981;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .get-item h4 {
+            color: #1a1a2e;
+            margin-bottom: 5px;
+            font-size: 1rem;
+        }
+
+        .get-item p {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        /* Pricing */
+        .pricing {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 80px 0;
+        }
+
+        .pricing .section-title h2 {
+            color: white;
+        }
+
+        .pricing .section-title p {
+            color: rgba(255,255,255,0.7);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .pricing-card {
+            background: white;
+            color: #1a1a2e;
+            border-radius: 16px;
+            padding: 35px;
+            position: relative;
+            transition: transform 0.2s;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .pricing-card.featured {
+            border: 3px solid #fbbf24;
+            transform: scale(1.05);
+        }
+
+        .pricing-card.featured .badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #fbbf24;
+            color: #1a1a2e;
+            padding: 5px 20px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .pricing-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #1a1a2e;
+        }
+
+        .pricing-card .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #667eea;
+            margin: 20px 0;
+        }
+
+        .pricing-card .price span {
+            font-size: 1rem;
+            color: #666;
+            font-weight: 400;
+        }
+
+        .pricing-card .original-price {
+            text-decoration: line-through;
+            color: #999;
+            font-size: 1.2rem;
+        }
+
+        .pricing-card ul {
+            list-style: none;
+            margin: 25px 0;
+        }
+
+        .pricing-card li {
+            padding: 10px 0;
+            color: #555;
+            padding-left: 28px;
+            position: relative;
+        }
+
+        .pricing-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #10b981;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .pricing-card .cta-button {
+            display: block;
+            background: #667eea;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .pricing-card .cta-button:hover {
+            background: #5a67d8;
+        }
+
+        .pricing-card.featured .cta-button {
+            background: #fbbf24;
+            color: #1a1a2e;
+        }
+
+        .pricing-card.featured .cta-button:hover {
+            background: #f59e0b;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 80px 0;
+            background: #f9fafb;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .testimonial {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .testimonial p {
+            color: #555;
+            font-style: italic;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .testimonial .author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .testimonial .avatar {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .testimonial .author-info h4 {
+            color: #1a1a2e;
+            font-size: 1rem;
+        }
+
+        .testimonial .author-info span {
+            color: #666;
+            font-size: 0.85rem;
+        }
+
+        /* FAQ */
+        .faq {
+            padding: 80px 0;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #eee;
+            padding: 20px 0;
+        }
+
+        .faq-item h4 {
+            color: #1a1a2e;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .faq-item p {
+            color: #666;
+            line-height: 1.7;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+            color: #1a1a2e;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .cta-section p {
+            opacity: 0.95;
+            margin-bottom: 25px;
+            font-size: 1.05rem;
+        }
+
+        .cta-section .cta-button {
+            background: #1a1a2e;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            display: inline-block;
+            transition: transform 0.2s;
+        }
+
+        .cta-section .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        /* Footer */
+        .footer {
+            background: #1a1a2e;
+            color: rgba(255,255,255,0.7);
+            padding: 30px 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1rem;
+            }
+
+            .pricing-card.featured {
+                transform: none;
+            }
+
+            .value-props-grid,
+            .get-grid,
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>🚀 AI 技能提升计划</h1>
+            <p class="subtitle">
+                <span class="highlight">30 天</span> 掌握 AI 工具，让工作效率翻倍<br>
+                开启副业收入，做不被淘汰的职场人
+            </p>
+            <a href="#pricing" class="cta-button">立即报名 - 限时特惠 ¥299</a>
+            <br>
+            <a href="#what-you-get" style="color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.95rem;">了解课程详情 ↓</a>
+        </div>
+    </section>
+
+    <!-- Pain Points -->
+    <section class="pain-points">
+        <div class="container">
+            <div class="section-title">
+                <h2>你是否也有这些困扰？</h2>
+                <p>AI 时代来了，但不知道从哪里开始</p>
+            </div>
+            <div class="pain-points-grid">
+                <div class="pain-point">
+                    <h3>😰 担心被 AI 淘汰</h3>
+                    <p>看到别人用 AI 提效，自己却不会用，怕被职场淘汰</p>
+                </div>
+                <div class="pain-point">
+                    <h3>😵 信息太多学不会</h3>
+                    <p>网上教程太散，今天学这个明天学那个，始终不成体系</p>
+                </div>
+                <div class="pain-point">
+                    <h3>😤 学了用不上</h3>
+                    <p>学了一堆理论，遇到实际问题还是不会解决</p>
+                </div>
+                <div class="pain-point">
+                    <h3>😫 没时间学习</h3>
+                    <p>工作太忙，碎片时间不知道如何有效利用</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Props -->
+    <section class="value-props">
+        <div class="container">
+            <div class="section-title">
+                <h2>这门课能给你什么？</h2>
+                <p>不是理论灌输，而是实战能力提升</p>
+            </div>
+            <div class="value-props-grid">
+                <div class="value-prop">
+                    <div class="icon">📚</div>
+                    <h3>体系化课程</h3>
+                    <p>从 0 到 1 系统学习，不用自己摸索</p>
+                </div>
+                <div class="value-prop">
+                    <div class="icon">💼</div>
+                    <h3>场景化实战</h3>
+                    <p>学完就能用，解决工作实际问题</p>
+                </div>
+                <div class="value-prop">
+                    <div class="icon">💰</div>
+                    <h3>副业变现指南</h3>
+                    <p>教你用 AI 技能接私活、做自媒体</p>
+                </div>
+                <div class="value-prop">
+                    <div class="icon">👥</div>
+                    <h3>社群共学</h3>
+                    <p>和志同道合的同学一起进步</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You Get -->
+    <section class="what-you-get" id="what-you-get">
+        <div class="container">
+            <div class="section-title">
+                <h2>课程内容包括</h2>
+                <p>4 周系统学习 + 实战练习 + 社群答疑</p>
+            </div>
+            <div class="get-grid">
+                <div class="get-item">
+                    <div class="check">✓</div>
+                    <div>
+                        <h4>AI 工具入门</h4>
+                        <p>主流 AI 工具对比与选择，快速上手不迷路</p>
+                    </div>
+                </div>
+                <div class="get-item">
+                    <div class="check">✓</div>
+                    <div>
+                        <h4>提示词工程</h4>
+                        <p>写出高质量提示词，让 AI 输出你想要的结果</p>
+                    </div>
+                </div>
+                <div class="get-item">
+                    <div class="check">✓</div>
+                    <div>
+                        <h4>办公效率提升</h4>
+                        <p>用 AI 写文档、做表格、生成 PPT，效率翻倍</p>
+                    </div>
+                </div>
+                <div class="get-item">
+                    <div class="check">✓</div>
+                    <div>
+                        <h4>内容创作实战</h4>
+                        <p>用 AI 写文章、做视频、运营自媒体</p>
+                    </div>
+                </div>
+                <div class="get-item">
+                    <div class="check">✓</div>
+                    <div>
+                        <h4>副业变现路径</h4>
+                        <p>接私活、做课程、知识付费实操指南</p>
+                    </div>
+                </div>
+                <div class="get-item">
+                    <div class="check">✓</div>
+                    <div>
+                        <h4>社群答疑 + 作业批改</h4>
+                        <p>遇到问题有人解答，作业有人点评</p>
+                    </div>
+                </div>
+                <div class="get-item">
+                    <div class="check">✓</div>
+                    <div>
+                        <h4>终身学习资源</h4>
+                        <p>课程永久回放，持续更新最新玩法</p>
+                    </div>
+                </div>
+                <div class="get-item">
+                    <div class="check">✓</div>
+                    <div>
+                        <h4>结业证书</h4>
+                        <p>完成课程获得认证，丰富简历</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-title">
+                <h2>选择适合你的方案</h2>
+                <p>限时优惠，投资自己最好的时机</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>🌱 自学版</h3>
+                    <p class="price">¥99 <span>/ 永久</span></p>
+                    <p class="original-price">原价 ¥199</p>
+                    <ul>
+                        <li>全部视频课程</li>
+                        <li>课程资料包</li>
+                        <li>提示词模板库</li>
+                        <li>永久回看权限</li>
+                    </ul>
+                    <a href="#contact" class="cta-button">立即学习</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="badge">🔥 最受欢迎</div>
+                    <h3>🚀 实战版</h3>
+                    <p class="price">¥299 <span>/ 永久</span></p>
+                    <p class="original-price">原价 ¥599</p>
+                    <ul>
+                        <li>全部视频课程</li>
+                        <li>课程资料包 + 提示词模板库</li>
+                        <li>社群答疑 (30 天)</li>
+                        <li>作业批改 + 点评</li>
+                        <li>结业证书</li>
+                        <li>副业资源对接</li>
+                    </ul>
+                    <a href="#contact" class="cta-button">立即报名</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>💎 VIP 版</h3>
+                    <p class="price">¥999 <span>/ 永久</span></p>
+                    <p class="original-price">原价 ¥1999</p>
+                    <ul>
+                        <li>实战版全部内容</li>
+                        <li>1v1 个人咨询 (2 小时)</li>
+                        <li>副业项目指导</li>
+                        <li>终身社群权限</li>
+                        <li>内推机会</li>
+                        <li>线下活动优先</li>
+                    </ul>
+                    <a href="#contact" class="cta-button">咨询报名</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>学员反馈</h2>
+                <p>看他们如何用 AI 改变自己</p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p>"上完课第二周就用 AI 帮公司自动化了报表流程，老板给我加了薪。学费早就赚回来了！"</p>
+                    <div class="author">
+                        <div class="avatar">李</div>
+                        <div class="author-info">
+                            <h4>李先生</h4>
+                            <span>数据分析师，32 岁</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"我是全职妈妈，学完后开始接文案私活，现在月收入稳定在 8000+，时间还自由。"</p>
+                    <div class="author">
+                        <div class="avatar">张</div>
+                        <div class="author-info">
+                            <h4>张女士</h4>
+                            <span>自由职业者，29 岁</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"大学生一枚，学完用 AI 做自媒体，现在小红书粉丝 2 万 +，广告收入比实习工资还高。"</p>
+                    <div class="author">
+                        <div class="avatar">王</div>
+                        <div class="author-info">
+                            <h4>王同学</h4>
+                            <span>大三学生，21 岁</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>常见问题</h2>
+            </div>
+            <div class="faq-item">
+                <h4>Q: 我没有编程基础，能学会吗？</h4>
+                <p>A: 完全可以！课程专为零基础设计，不需要任何编程或技术背景。我们教你的是如何"使用"AI 工具，而不是"开发"AI。</p>
+            </div>
+            <div class="faq-item">
+                <h4>Q: 每天需要花多少时间学习？</h4>
+                <p>A: 课程视频每节 10-20 分钟，建议每天投入 30-60 分钟。周末可以花 2-3 小时完成实战练习。碎片时间也能学！</p>
+            </div>
+            <div class="faq-item">
+                <h4>Q: 学完后真的能变现吗？</h4>
+                <p>A: 课程包含完整的变现路径指导，但收入取决于个人努力。我们会提供资源对接和实战指导，帮你迈出第一步。</p>
+            </div>
+            <div class="faq-item">
+                <h4>Q: 课程是直播还是录播？</h4>
+                <p>A: 核心课程是录播，可以永久回看。定期会有直播答疑和加餐内容，直播也会录屏回放。</p>
+            </div>
+            <div class="faq-item">
+                <h4>Q: 交了钱不想学了可以退款吗？</h4>
+                <p>A: 开课后 7 天内，学完第一节不满意可全额退款。我们相信课程质量会让你留下。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <h2>🎯 立即报名，开启 AI 进阶之路</h2>
+            <p>前 100 名报名送价值 ¥199 的提示词秘籍</p>
+            <a href="#" class="cta-button" id="wechat-link">添加微信咨询</a>
+            <p style="margin-top: 15px; font-size: 0.95rem; opacity: 0.9;">
+                微信：<strong style="color: #1a1a2e;">[待 CEO 提供]</strong>
+            </p>
+            <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">
+                邮箱：<a href="mailto:hello@100000mrr.com" style="color: #1a1a2e; text-decoration: underline;">hello@100000mrr.com</a>
+            </p>
+            <p style="margin-top: 25px; font-size: 0.85rem; opacity: 0.7;">
+                ⏰ 限时优惠：原价 ¥599，现价仅需 ¥299
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 100000MRR. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="#">隐私政策</a> |
+                <a href="#">服务条款</a> |
+                <a href="#">退款政策</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
