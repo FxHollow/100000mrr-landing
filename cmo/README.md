@@ -143,11 +143,11 @@ Day 7 (4/7)  周总结       │ 战报 + 周报提交
 ## Git 提交记录 (Week 1)
 
 ```
+1dda427 update: CMO README - update git commit history
 f4b280a update: PM heartbeat check timestamp update
 0e65350 update: CMO README - add launch preparation doc to index
 e2c3497 feat: Add Week 2 launch preparation checklist
 4455191 update: Landing Page contact section - WeChat ID placeholder
-08a2f88 update: CMO README - Week 2 启动前状态更新 (Mar 27)
 ```
 
 **远程仓库**: https://github.com/FxHollow/100000mrr-landing
