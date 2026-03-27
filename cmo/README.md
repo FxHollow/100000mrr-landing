@@ -209,6 +209,8 @@ ad6f64a feat: Add Week 2 pre-launch status report for CEO
 - Day 1 Checklist: `cmo/week2-day1-checklist.md`
 - 部署指南：`cmo/landing-page-deployment-guide.md`
 - 进度追踪：`cmo-week2-progress-tracker.md`
+- 启动准备清单：`cmo/week2-launch-preparation.md`
+- Pre-Launch 报告：`cmo/week2-pre-launch-status.md`
 
 ---
 
