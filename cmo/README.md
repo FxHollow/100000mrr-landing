@@ -16,7 +16,7 @@
 | Landing Page | ✅ 已部署 | https://FxHollow.github.io/100000mrr-landing/ |
 | CEO 支持项 | 🟡 部分完成 | 微信号已提供，待收款码 + 百度统计 ID |
 
-**Git 提交**: 87+ commits
+**Git 提交**: 90+ commits
 
 ---
 
@@ -143,15 +143,15 @@ Day 7 (4/7)  周总结       │ 战报 + 周报提交
 ## Git 提交记录 (Week 1)
 
 ```
+f4b280a update: PM heartbeat check timestamp update
+0e65350 update: CMO README - add launch preparation doc to index
+e2c3497 feat: Add Week 2 launch preparation checklist
 4455191 update: Landing Page contact section - WeChat ID placeholder
 08a2f88 update: CMO README - Week 2 启动前状态更新 (Mar 27)
-9fbeb93 update: CMO README - add latest git commits 记录
-ad6f64a feat: Add Week 2 pre-launch status report for CEO
-13d648d update: CMO progress tracker - Week 2 countdown status (5 days to go)
 ```
 
 **远程仓库**: https://github.com/FxHollow/100000mrr-landing
-**总提交数**: 88+ commits
+**总提交数**: 90+ commits
 
 ---
 
