@@ -33,31 +33,31 @@
 
 | # | Company | Contact | Role | Source | ICP Fit | Priority | Status | Notes |
 |---|---------|---------|------|--------|---------|----------|--------|-------|
-| 1 | - | 张敏 | HR/培训负责人 | CEO warm intro | High | 1 | Day 2 Followed | 前公司 HRD，负责 200+ 人培训 |
-| 2 | - | 李强 | HR/培训负责人 | CEO warm intro | High | 1 | Day 2 Followed | 某互联网公司培训总监，行业峰会认识 |
-| 3 | 小红书-AI 职场课 | 博主 | 职场/AI 垂类 KOL | CEO warm intro | High | 1 | Day 2 Followed | 5 万粉丝，专注 AI 办公技能 |
-| 4 | 知乎 - 高效办公指南 | 博主 | 职场/AI 垂类 KOL | CEO warm intro | High | 1 | Day 2 Followed | 10 万关注，专栏作者 |
-| 5 | - | 王芳 | 知识付费从业者 | CEO warm intro | High | 1 | Day 2 Followed | 前得到课程策划，现独立制作课程 |
-| 6 | - | 陈晨 | 知识付费从业者 | CEO warm intro | High | 1 | Day 2 Followed | 知识星球 3000+ 成员，课程分销 |
-| 7 | - | 赵磊 | 创业者/小企业主 | CEO warm intro | High | 1 | Day 2 Followed | CEO 朋友，科技公司创始人 30 人团队 |
-| 8 | - | 钱伟 | 创业者/小企业主 | CEO warm intro | Medium | 2 | Day 2 Followed | 创业者社群成员，电商公司老板 |
-| 9 | - | 孙娜 | 产品经理负责人 | CEO warm intro | High | 1 | Day 2 Followed | 前同事，某大厂产品总监 |
-| 10 | - | 周杰 | 运营负责人 | CEO warm intro | Medium | 2 | Day 2 Followed | 行业活动认识，新媒体运营总监 |
+| 1 | - | 张敏 | HR/培训负责人 | CEO warm intro | High | 1 | Day 2 Sent | 前公司 HRD，负责 200+ 人培训 |
+| 2 | - | 李强 | HR/培训负责人 | CEO warm intro | High | 1 | Day 2 Sent | 某互联网公司培训总监，行业峰会认识 |
+| 3 | 小红书-AI 职场课 | 博主 | 职场/AI 垂类 KOL | CEO warm intro | High | 1 | Day 2 Sent | 5 万粉丝，专注 AI 办公技能 |
+| 4 | 知乎 - 高效办公指南 | 博主 | 职场/AI 垂类 KOL | CEO warm intro | High | 1 | Day 2 Sent | 10 万关注，专栏作者 |
+| 5 | - | 王芳 | 知识付费从业者 | CEO warm intro | High | 1 | Day 2 Sent | 前得到课程策划，现独立制作课程 |
+| 6 | - | 陈晨 | 知识付费从业者 | CEO warm intro | High | 1 | Day 2 Sent | 知识星球 3000+ 成员，课程分销 |
+| 7 | - | 赵磊 | 创业者/小企业主 | CEO warm intro | High | 1 | Day 2 Sent | CEO 朋友，科技公司创始人 30 人团队 |
+| 8 | - | 钱伟 | 创业者/小企业主 | CEO warm intro | Medium | 2 | Day 2 Sent | 创业者社群成员，电商公司老板 |
+| 9 | - | 孙娜 | 产品经理负责人 | CEO warm intro | High | 1 | Day 2 Sent | 前同事，某大厂产品总监 |
+| 10 | - | 周杰 | 运营负责人 | CEO warm intro | Medium | 2 | Day 2 Sent | 行业活动认识，新媒体运营总监 |
 
 ### WeChat Groups (Join and Identify)
 
 | # | Company | Contact | Role | Source | ICP Fit | Priority | Status | Notes |
 |---|---------|---------|------|--------|---------|----------|--------|-------|
-| 11 | - | 吴敏 | 社群群主 | 职场进阶群 | Medium | 2 | Day 2 Followed | 500 人群，已发送合作邀请 |
-| 12 | - | 郑阳 | 社群群主 | 自我提升训练营 | Medium | 2 | Day 2 Followed | 300 人群，已发送合作邀请 |
-| 13 | - | 冯雪 | 设计师 | 设计圈朋友 | High | 1 | Day 2 Followed | UI 设计师，种子用户邀请 |
-| 14 | - | 蒋涛 | 开发者 | 技术社区 | High | 1 | Day 2 Followed | 全栈工程师，种子用户邀请 |
-| 15 | - | 韩明 | 投资人 | 投资人朋友 | High | 1 | Day 2 Followed | 专注早期项目，种子用户邀请 |
-| 16 | - | 杨琳 | 媒体 | 36 氪记者 | High | 1 | Day 2 Followed | 专注早期项目报道 |
-| 17 | - | 大学校友群 | 校友 | 校友群 | Medium | 2 | Day 2 Followed | 200+ 人群，已发送校友专属价 |
-| 18 | - | 前同事群 | 前同事 | 前同事群 | Medium | 2 | Day 2 Followed | 10+ 人群，已发送前同事专属价 |
-| 19 | - | AI 应用交流群 | 群友 | 行业群 | High | 1 | Day 2 Followed | 500 人群，已发送群友专属价 |
-| 20 | - | 培训同行 | 同行 | 培训同行 | Medium | 2 | Day 2 Followed | 线下转线上，资源互换合作 |
+| 11 | - | 吴敏 | 社群群主 | 职场进阶群 | Medium | 2 | Day 2 Sent | 500 人群，已发送合作邀请 |
+| 12 | - | 郑阳 | 社群群主 | 自我提升训练营 | Medium | 2 | Day 2 Sent | 300 人群，已发送合作邀请 |
+| 13 | - | 冯雪 | 设计师 | 设计圈朋友 | High | 1 | Day 2 Sent | UI 设计师，种子用户邀请 |
+| 14 | - | 蒋涛 | 开发者 | 技术社区 | High | 1 | Day 2 Sent | 全栈工程师，种子用户邀请 |
+| 15 | - | 韩明 | 投资人 | 投资人朋友 | High | 1 | Day 2 Sent | 专注早期项目，种子用户邀请 |
+| 16 | - | 杨琳 | 媒体 | 36 氪记者 | High | 1 | Day 2 Sent | 专注早期项目报道 |
+| 17 | - | 大学校友群 | 校友 | 校友群 | Medium | 2 | Day 2 Sent | 200+ 人群，已发送校友专属价 |
+| 18 | - | 前同事群 | 前同事 | 前同事群 | Medium | 2 | Day 2 Sent | 10+ 人群，已发送前同事专属价 |
+| 19 | - | AI 应用交流群 | 群友 | 行业群 | High | 1 | Day 2 Sent | 500 人群，已发送群友专属价 |
+| 20 | - | 培训同行 | 同行 | 培训同行 | Medium | 2 | Day 2 Sent | 线下转线上，资源互换合作 |
 
 ---
 
@@ -226,6 +226,8 @@
 | Prospects researched | 20 | 20 | 100% ✅ |
 | Initial outreach sent | 20 | 20 | 100% ✅ |
 | Day 2 follow-up sent | 20 | 20 | 100% ✅ |
+| Day 5 landing page reminder | 20 | 0 | 0% ⏳ |
+| Day 7 final confirmation | 20 | 0 | 0% ⏳ |
 | Response rate | 25% (5) | 0 | 0% ⏳ |
 | Calls booked | 5 | 0 | 0% ⏳ |
 | Calls completed | 4 | 0 | 0% ⏳ |
@@ -233,7 +235,7 @@
 | Deals closed | 1-2 | 0 | 0% ⏳ |
 | Revenue generated | ¥30k-80k | ¥0 | 0% ⏳ |
 
-**Note**: 回复周期通常 24-48 小时，继续跟进中。
+**Note**: 回复周期通常 24-48 小时，Day 2 跟进已于 2026-04-06 执行，继续等待回复中。
 
 ---
 
