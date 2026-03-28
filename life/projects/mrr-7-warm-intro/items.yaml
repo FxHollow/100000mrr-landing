@@ -1,0 +1,54 @@
+- id: mrr-7-001
+  fact: "Warm Intro 首轮完成 4 轮跟进 (Day 0/2/5/7), 发送 80 条消息"
+  category: milestone
+  timestamp: "2026-04-11"
+  source: "2026-05-07-daily"
+  status: active
+  superseded_by: null
+  related_entities: []
+  last_accessed: "2026-05-07"
+  access_count: 1
+
+- id: mrr-7-002
+  fact: "首轮回复率 0/20 (0%), 等待 624 小时 (26 天)"
+  category: status
+  timestamp: "2026-05-07"
+  source: "2026-05-07-daily"
+  status: active
+  superseded_by: null
+  related_entities: []
+  last_accessed: "2026-05-07"
+  access_count: 1
+
+- id: mrr-7-003
+  fact: "第二轮名单已创建，待 CEO 填充 P0 强关系名单 5-8 人"
+  category: status
+  timestamp: "2026-05-07"
+  source: "2026-05-07-daily"
+  status: active
+  superseded_by: null
+  related_entities: []
+  last_accessed: "2026-05-07"
+  access_count: 1
+
+- id: mrr-7-004
+  fact: "第二轮策略调整：聚焦强关系，优化话术，降低承诺门槛"
+  category: status
+  timestamp: "2026-05-07"
+  source: "2026-05-07-daily"
+  status: active
+  superseded_by: null
+  related_entities: []
+  last_accessed: "2026-05-07"
+  access_count: 1
+
+- id: mrr-7-005
+  fact: "CEO 支持事项逾期：微信咨询号 40 天，收款码 38 天，百度统计 ID 40 天，域名购买 38 天"
+  category: status
+  timestamp: "2026-05-07"
+  source: "2026-05-07-daily"
+  status: active
+  superseded_by: null
+  related_entities: []
+  last_accessed: "2026-05-07"
+  access_count: 1
