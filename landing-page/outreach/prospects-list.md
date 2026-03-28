@@ -33,16 +33,16 @@
 
 | # | Company | Contact | Role | Source | ICP Fit | Priority | Status | Notes |
 |---|---------|---------|------|--------|---------|----------|--------|-------|
-| 1 | - | 张敏 | HR/培训负责人 | CEO warm intro | High | 1 | Not Contacted | 前公司 HRD，负责 200+ 人培训 |
-| 2 | - | 李强 | HR/培训负责人 | CEO warm intro | High | 1 | Not Contacted | 某互联网公司培训总监，行业峰会认识 |
-| 3 | 小红书-AI 职场课 | 博主 | 职场/AI 垂类 KOL | CEO warm intro | High | 1 | Not Contacted | 5 万粉丝，专注 AI 办公技能 |
-| 4 | 知乎 - 高效办公指南 | 博主 | 职场/AI 垂类 KOL | CEO warm intro | High | 1 | Not Contacted | 10 万关注，专栏作者 |
-| 5 | - | 王芳 | 知识付费从业者 | CEO warm intro | High | 1 | Not Contacted | 前得到课程策划，现独立制作课程 |
-| 6 | - | 陈晨 | 知识付费从业者 | CEO warm intro | High | 1 | Not Contacted | 知识星球 3000+ 成员，课程分销 |
-| 7 | - | 赵磊 | 创业者/小企业主 | CEO warm intro | High | 1 | Not Contacted | CEO 朋友，科技公司创始人 30 人团队 |
-| 8 | - | 钱伟 | 创业者/小企业主 | CEO warm intro | Medium | 2 | Not Contacted | 创业者社群成员，电商公司老板 |
-| 9 | - | 孙娜 | 产品经理负责人 | CEO warm intro | High | 1 | Not Contacted | 前同事，某大厂产品总监 |
-| 10 | - | 周杰 | 运营负责人 | CEO warm intro | Medium | 2 | Not Contacted | 行业活动认识，新媒体运营总监 |
+| 1 | - | 张敏 | HR/培训负责人 | CEO warm intro | High | 1 | Contacted | 前公司 HRD，负责 200+ 人培训 |
+| 2 | - | 李强 | HR/培训负责人 | CEO warm intro | High | 1 | Contacted | 某互联网公司培训总监，行业峰会认识 |
+| 3 | 小红书-AI 职场课 | 博主 | 职场/AI 垂类 KOL | CEO warm intro | High | 1 | Contacted | 5 万粉丝，专注 AI 办公技能 |
+| 4 | 知乎 - 高效办公指南 | 博主 | 职场/AI 垂类 KOL | CEO warm intro | High | 1 | Contacted | 10 万关注，专栏作者 |
+| 5 | - | 王芳 | 知识付费从业者 | CEO warm intro | High | 1 | Contacted | 前得到课程策划，现独立制作课程 |
+| 6 | - | 陈晨 | 知识付费从业者 | CEO warm intro | High | 1 | Contacted | 知识星球 3000+ 成员，课程分销 |
+| 7 | - | 赵磊 | 创业者/小企业主 | CEO warm intro | High | 1 | Contacted | CEO 朋友，科技公司创始人 30 人团队 |
+| 8 | - | 钱伟 | 创业者/小企业主 | CEO warm intro | Medium | 2 | Contacted | 创业者社群成员，电商公司老板 |
+| 9 | - | 孙娜 | 产品经理负责人 | CEO warm intro | High | 1 | Contacted | 前同事，某大厂产品总监 |
+| 10 | - | 周杰 | 运营负责人 | CEO warm intro | Medium | 2 | Contacted | 行业活动认识，新媒体运营总监 |
 
 ### WeChat Groups (Join and Identify)
 
