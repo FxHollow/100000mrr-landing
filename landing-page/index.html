@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI 技能提升计划 | 100000MRR</title>
-    <meta name="description" content="普通人也能学会的 AI 实战课 - 30 天掌握 AI 工具，提升工作效率，开启副业收入">
+    <title data-i18n="page_title">AI 技能提升计划 | 100000MRR</title>
+    <meta name="description" content="普通人也能学会的 AI 实战课 - 30 天掌握 AI 工具，提升工作效率，开启副业收入" data-i18n="page_desc">
     <!-- Baidu Analytics - TODO: Replace with actual ID from https://tongji.baidu.com/ -->
     <script>
     var _hmt = _hmt || [];
@@ -35,6 +35,29 @@
             max-width: 1100px;
             margin: 0 auto;
             padding: 0 20px;
+        }
+
+        /* Language Switcher Button */
+        #lang-switcher {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            padding: 8px 16px;
+            border: 2px solid white;
+            border-radius: 20px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        #lang-switcher:hover {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.05);
         }
 
         /* Hero Section */
@@ -488,6 +511,13 @@
                 font-size: 1rem;
             }
 
+            #lang-switcher {
+                top: 10px;
+                right: 10px;
+                padding: 6px 12px;
+                font-size: 0.8rem;
+            }
+
             .pricing-card.featured {
                 transform: none;
             }
@@ -501,17 +531,19 @@
     </style>
 </head>
 <body>
+    <!-- Language Switcher Button -->
+    <button id="lang-switcher">EN</button>
+
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>🚀 AI 技能提升计划</h1>
+            <h1 data-i18n="hero_title">🚀 AI 技能提升计划</h1>
             <p class="subtitle">
-                <span class="highlight">30 天</span> 掌握 AI 工具，让工作效率翻倍<br>
-                开启副业收入，做不被淘汰的职场人
+                <span class="highlight" data-i18n="hero_highlight">30 天</span> <span data-i18n="hero_subtitle">掌握 AI 工具，让工作效率翻倍<br>开启副业收入，做不被淘汰的职场人</span>
             </p>
-            <a href="#pricing" class="cta-button">立即报名 - 限时特惠 ¥299</a>
+            <a href="#pricing" class="cta-button" data-i18n="hero_cta">立即报名 - 限时特惠 ¥299</a>
             <br>
-            <a href="#what-you-get" style="color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.95rem;">了解课程详情 ↓</a>
+            <a href="#what-you-get" style="color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.95rem;" data-i18n="hero_secondary">了解课程详情 ↓</a>
         </div>
     </section>
 
@@ -519,25 +551,25 @@
     <section class="pain-points">
         <div class="container">
             <div class="section-title">
-                <h2>你是否也有这些困扰？</h2>
-                <p>AI 时代来了，但不知道从哪里开始</p>
+                <h2 data-i18n="pain_title">你是否也有这些困扰？</h2>
+                <p data-i18n="pain_subtitle">AI 时代来了，但不知道从哪里开始</p>
             </div>
             <div class="pain-points-grid">
                 <div class="pain-point">
-                    <h3>😰 担心被 AI 淘汰</h3>
-                    <p>看到别人用 AI 提效，自己却不会用，怕被职场淘汰</p>
+                    <h3 data-i18n="pain_1_title">😰 担心被 AI 淘汰</h3>
+                    <p data-i18n="pain_1_desc">看到别人用 AI 提效，自己却不会用，怕被职场淘汰</p>
                 </div>
                 <div class="pain-point">
-                    <h3>😵 信息太多学不会</h3>
-                    <p>网上教程太散，今天学这个明天学那个，始终不成体系</p>
+                    <h3 data-i18n="pain_2_title">😵 信息太多学不会</h3>
+                    <p data-i18n="pain_2_desc">网上教程太散，今天学这个明天学那个，始终不成体系</p>
                 </div>
                 <div class="pain-point">
-                    <h3>😤 学了用不上</h3>
-                    <p>学了一堆理论，遇到实际问题还是不会解决</p>
+                    <h3 data-i18n="pain_3_title">😤 学了用不上</h3>
+                    <p data-i18n="pain_3_desc">学了一堆理论，遇到实际问题还是不会解决</p>
                 </div>
                 <div class="pain-point">
-                    <h3>😫 没时间学习</h3>
-                    <p>工作太忙，碎片时间不知道如何有效利用</p>
+                    <h3 data-i18n="pain_4_title">😫 没时间学习</h3>
+                    <p data-i18n="pain_4_desc">工作太忙，碎片时间不知道如何有效利用</p>
                 </div>
             </div>
         </div>
@@ -547,29 +579,29 @@
     <section class="value-props">
         <div class="container">
             <div class="section-title">
-                <h2>这门课能给你什么？</h2>
-                <p>不是理论灌输，而是实战能力提升</p>
+                <h2 data-i18n="value_title">这门课能给你什么？</h2>
+                <p data-i18n="value_subtitle">不是理论灌输，而是实战能力提升</p>
             </div>
             <div class="value-props-grid">
                 <div class="value-prop">
                     <div class="icon">📚</div>
-                    <h3>体系化课程</h3>
-                    <p>从 0 到 1 系统学习，不用自己摸索</p>
+                    <h3 data-i18n="value_1_title">体系化课程</h3>
+                    <p data-i18n="value_1_desc">从 0 到 1 系统学习，不用自己摸索</p>
                 </div>
                 <div class="value-prop">
                     <div class="icon">💼</div>
-                    <h3>场景化实战</h3>
-                    <p>学完就能用，解决工作实际问题</p>
+                    <h3 data-i18n="value_2_title">场景化实战</h3>
+                    <p data-i18n="value_2_desc">学完就能用，解决工作实际问题</p>
                 </div>
                 <div class="value-prop">
                     <div class="icon">💰</div>
-                    <h3>副业变现指南</h3>
-                    <p>教你用 AI 技能接私活、做自媒体</p>
+                    <h3 data-i18n="value_3_title">副业变现指南</h3>
+                    <p data-i18n="value_3_desc">教你用 AI 技能接私活、做自媒体</p>
                 </div>
                 <div class="value-prop">
                     <div class="icon">👥</div>
-                    <h3>社群共学</h3>
-                    <p>和志同道合的同学一起进步</p>
+                    <h3 data-i18n="value_4_title">社群共学</h3>
+                    <p data-i18n="value_4_desc">和志同道合的同学一起进步</p>
                 </div>
             </div>
         </div>
@@ -579,64 +611,64 @@
     <section class="what-you-get" id="what-you-get">
         <div class="container">
             <div class="section-title">
-                <h2>课程内容包括</h2>
-                <p>4 周系统学习 + 实战练习 + 社群答疑</p>
+                <h2 data-i18n="content_title">课程内容包括</h2>
+                <p data-i18n="content_subtitle">4 周系统学习 + 实战练习 + 社群答疑</p>
             </div>
             <div class="get-grid">
                 <div class="get-item">
                     <div class="check">✓</div>
                     <div>
-                        <h4>AI 工具入门</h4>
-                        <p>主流 AI 工具对比与选择，快速上手不迷路</p>
+                        <h4 data-i18n="content_1_title">AI 工具入门</h4>
+                        <p data-i18n="content_1_desc">主流 AI 工具对比与选择，快速上手不迷路</p>
                     </div>
                 </div>
                 <div class="get-item">
                     <div class="check">✓</div>
                     <div>
-                        <h4>提示词工程</h4>
-                        <p>写出高质量提示词，让 AI 输出你想要的结果</p>
+                        <h4 data-i18n="content_2_title">提示词工程</h4>
+                        <p data-i18n="content_2_desc">写出高质量提示词，让 AI 输出你想要的结果</p>
                     </div>
                 </div>
                 <div class="get-item">
                     <div class="check">✓</div>
                     <div>
-                        <h4>办公效率提升</h4>
-                        <p>用 AI 写文档、做表格、生成 PPT，效率翻倍</p>
+                        <h4 data-i18n="content_3_title">办公效率提升</h4>
+                        <p data-i18n="content_3_desc">用 AI 写文档、做表格、生成 PPT，效率翻倍</p>
                     </div>
                 </div>
                 <div class="get-item">
                     <div class="check">✓</div>
                     <div>
-                        <h4>内容创作实战</h4>
-                        <p>用 AI 写文章、做视频、运营自媒体</p>
+                        <h4 data-i18n="content_4_title">内容创作实战</h4>
+                        <p data-i18n="content_4_desc">用 AI 写文章、做视频、运营自媒体</p>
                     </div>
                 </div>
                 <div class="get-item">
                     <div class="check">✓</div>
                     <div>
-                        <h4>副业变现路径</h4>
-                        <p>接私活、做课程、知识付费实操指南</p>
+                        <h4 data-i18n="content_5_title">副业变现路径</h4>
+                        <p data-i18n="content_5_desc">接私活、做课程、知识付费实操指南</p>
                     </div>
                 </div>
                 <div class="get-item">
                     <div class="check">✓</div>
                     <div>
-                        <h4>社群答疑 + 作业批改</h4>
-                        <p>遇到问题有人解答，作业有人点评</p>
+                        <h4 data-i18n="content_6_title">社群答疑 + 作业批改</h4>
+                        <p data-i18n="content_6_desc">遇到问题有人解答，作业有人点评</p>
                     </div>
                 </div>
                 <div class="get-item">
                     <div class="check">✓</div>
                     <div>
-                        <h4>终身学习资源</h4>
-                        <p>课程永久回放，持续更新最新玩法</p>
+                        <h4 data-i18n="content_7_title">终身学习资源</h4>
+                        <p data-i18n="content_7_desc">课程永久回放，持续更新最新玩法</p>
                     </div>
                 </div>
                 <div class="get-item">
                     <div class="check">✓</div>
                     <div>
-                        <h4>结业证书</h4>
-                        <p>完成课程获得认证，丰富简历</p>
+                        <h4 data-i18n="content_8_title">结业证书</h4>
+                        <p data-i18n="content_8_desc">完成课程获得认证，丰富简历</p>
                     </div>
                 </div>
             </div>
@@ -647,50 +679,50 @@
     <section class="pricing" id="pricing">
         <div class="container">
             <div class="section-title">
-                <h2>选择适合你的方案</h2>
-                <p>限时优惠，投资自己最好的时机</p>
+                <h2 data-i18n="pricing_title">选择适合你的方案</h2>
+                <p data-i18n="pricing_subtitle">限时优惠，投资自己最好的时机</p>
             </div>
             <div class="pricing-grid">
                 <div class="pricing-card">
-                    <h3>🌱 自学版</h3>
-                    <p class="price">¥99 <span>/ 永久</span></p>
-                    <p class="original-price">原价 ¥199</p>
+                    <h3 data-i18n="pricing_1_name">🌱 自学版</h3>
+                    <p class="price">¥99 <span data-i18n="price_period">/ 永久</span></p>
+                    <p class="original-price" data-i18n="pricing_1_old">原价 ¥199</p>
                     <ul>
-                        <li>全部视频课程</li>
-                        <li>课程资料包</li>
-                        <li>提示词模板库</li>
-                        <li>永久回看权限</li>
+                        <li data-i18n="pricing_1_1">全部视频课程</li>
+                        <li data-i18n="pricing_1_2">课程资料包</li>
+                        <li data-i18n="pricing_1_3">提示词模板库</li>
+                        <li data-i18n="pricing_1_4">永久回看权限</li>
                     </ul>
-                    <a href="#contact" class="cta-button">立即学习</a>
+                    <a href="#contact" class="cta-button" data-i18n="pricing_1_cta">立即学习</a>
                 </div>
                 <div class="pricing-card featured">
-                    <div class="badge">🔥 最受欢迎</div>
-                    <h3>🚀 实战版</h3>
-                    <p class="price">¥299 <span>/ 永久</span></p>
-                    <p class="original-price">原价 ¥599</p>
+                    <div class="badge" data-i18n="pricing_badge">🔥 最受欢迎</div>
+                    <h3 data-i18n="pricing_2_name">🚀 实战版</h3>
+                    <p class="price">¥299 <span data-i18n="price_period">/ 永久</span></p>
+                    <p class="original-price" data-i18n="pricing_2_old">原价 ¥599</p>
                     <ul>
-                        <li>全部视频课程</li>
-                        <li>课程资料包 + 提示词模板库</li>
-                        <li>社群答疑 (30 天)</li>
-                        <li>作业批改 + 点评</li>
-                        <li>结业证书</li>
-                        <li>副业资源对接</li>
+                        <li data-i18n="pricing_2_1">全部视频课程</li>
+                        <li data-i18n="pricing_2_2">课程资料包 + 提示词模板库</li>
+                        <li data-i18n="pricing_2_3">社群答疑 (30 天)</li>
+                        <li data-i18n="pricing_2_4">作业批改 + 点评</li>
+                        <li data-i18n="pricing_2_5">结业证书</li>
+                        <li data-i18n="pricing_2_6">副业资源对接</li>
                     </ul>
-                    <a href="#contact" class="cta-button">立即报名</a>
+                    <a href="#contact" class="cta-button" data-i18n="pricing_2_cta">立即报名</a>
                 </div>
                 <div class="pricing-card">
-                    <h3>💎 VIP 版</h3>
-                    <p class="price">¥999 <span>/ 永久</span></p>
-                    <p class="original-price">原价 ¥1999</p>
+                    <h3 data-i18n="pricing_3_name">💎 VIP 版</h3>
+                    <p class="price">¥999 <span data-i18n="price_period">/ 永久</span></p>
+                    <p class="original-price" data-i18n="pricing_3_old">原价 ¥1999</p>
                     <ul>
-                        <li>实战版全部内容</li>
-                        <li>1v1 个人咨询 (2 小时)</li>
-                        <li>副业项目指导</li>
-                        <li>终身社群权限</li>
-                        <li>内推机会</li>
-                        <li>线下活动优先</li>
+                        <li data-i18n="pricing_3_1">实战版全部内容</li>
+                        <li data-i18n="pricing_3_2">1v1 个人咨询 (2 小时)</li>
+                        <li data-i18n="pricing_3_3">副业项目指导</li>
+                        <li data-i18n="pricing_3_4">终身社群权限</li>
+                        <li data-i18n="pricing_3_5">内推机会</li>
+                        <li data-i18n="pricing_3_6">线下活动优先</li>
                     </ul>
-                    <a href="#contact" class="cta-button">咨询报名</a>
+                    <a href="#contact" class="cta-button" data-i18n="pricing_3_cta">咨询报名</a>
                 </div>
             </div>
         </div>
@@ -700,37 +732,37 @@
     <section class="testimonials">
         <div class="container">
             <div class="section-title">
-                <h2>学员反馈</h2>
-                <p>看他们如何用 AI 改变自己</p>
+                <h2 data-i18n="testimonial_title">学员反馈</h2>
+                <p data-i18n="testimonial_subtitle">看他们如何用 AI 改变自己</p>
             </div>
             <div class="testimonial-grid">
                 <div class="testimonial">
-                    <p>"上完课第二周就用 AI 帮公司自动化了报表流程，老板给我加了薪。学费早就赚回来了！"</p>
+                    <p data-i18n="testimonial_1">"上完课第二周就用 AI 帮公司自动化了报表流程，老板给我加了薪。学费早就赚回来了！"</p>
                     <div class="author">
                         <div class="avatar">李</div>
                         <div class="author-info">
-                            <h4>李先生</h4>
-                            <span>数据分析师，32 岁</span>
+                            <h4 data-i18n="testimonial_1_name">李先生</h4>
+                            <span data-i18n="testimonial_1_role">数据分析师，32 岁</span>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial">
-                    <p>"我是全职妈妈，学完后开始接文案私活，现在月收入稳定在 8000+，时间还自由。"</p>
+                    <p data-i18n="testimonial_2">"我是全职妈妈，学完后开始接文案私活，现在月收入稳定在 8000+，时间还自由。"</p>
                     <div class="author">
                         <div class="avatar">张</div>
                         <div class="author-info">
-                            <h4>张女士</h4>
-                            <span>自由职业者，29 岁</span>
+                            <h4 data-i18n="testimonial_2_name">张女士</h4>
+                            <span data-i18n="testimonial_2_role">自由职业者，29 岁</span>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial">
-                    <p>"大学生一枚，学完用 AI 做自媒体，现在小红书粉丝 2 万 +，广告收入比实习工资还高。"</p>
+                    <p data-i18n="testimonial_3">"大学生一枚，学完用 AI 做自媒体，现在小红书粉丝 2 万 +，广告收入比实习工资还高。"</p>
                     <div class="author">
                         <div class="avatar">王</div>
                         <div class="author-info">
-                            <h4>王同学</h4>
-                            <span>大三学生，21 岁</span>
+                            <h4 data-i18n="testimonial_3_name">王同学</h4>
+                            <span data-i18n="testimonial_3_role">大三学生，21 岁</span>
                         </div>
                     </div>
                 </div>
@@ -742,27 +774,27 @@
     <section class="faq">
         <div class="container">
             <div class="section-title">
-                <h2>常见问题</h2>
+                <h2 data-i18n="faq_title">常见问题</h2>
             </div>
             <div class="faq-item">
-                <h4>Q: 我没有编程基础，能学会吗？</h4>
-                <p>A: 完全可以！课程专为零基础设计，不需要任何编程或技术背景。我们教你的是如何"使用"AI 工具，而不是"开发"AI。</p>
+                <h4 data-i18n="faq_1_q">Q: 我没有编程基础，能学会吗？</h4>
+                <p data-i18n="faq_1_a">A: 完全可以！课程专为零基础设计，不需要任何编程或技术背景。我们教你的是如何"使用"AI 工具，而不是"开发"AI。</p>
             </div>
             <div class="faq-item">
-                <h4>Q: 每天需要花多少时间学习？</h4>
-                <p>A: 课程视频每节 10-20 分钟，建议每天投入 30-60 分钟。周末可以花 2-3 小时完成实战练习。碎片时间也能学！</p>
+                <h4 data-i18n="faq_2_q">Q: 每天需要花多少时间学习？</h4>
+                <p data-i18n="faq_2_a">A: 课程视频每节 10-20 分钟，建议每天投入 30-60 分钟。周末可以花 2-3 小时完成实战练习。碎片时间也能学！</p>
             </div>
             <div class="faq-item">
-                <h4>Q: 学完后真的能变现吗？</h4>
-                <p>A: 课程包含完整的变现路径指导，但收入取决于个人努力。我们会提供资源对接和实战指导，帮你迈出第一步。</p>
+                <h4 data-i18n="faq_3_q">Q: 学完后真的能变现吗？</h4>
+                <p data-i18n="faq_3_a">A: 课程包含完整的变现路径指导，但收入取决于个人努力。我们会提供资源对接和实战指导，帮你迈出第一步。</p>
             </div>
             <div class="faq-item">
-                <h4>Q: 课程是直播还是录播？</h4>
-                <p>A: 核心课程是录播，可以永久回看。定期会有直播答疑和加餐内容，直播也会录屏回放。</p>
+                <h4 data-i18n="faq_4_q">Q: 课程是直播还是录播？</h4>
+                <p data-i18n="faq_4_a">A: 核心课程是录播，可以永久回看。定期会有直播答疑和加餐内容，直播也会录屏回放。</p>
             </div>
             <div class="faq-item">
-                <h4>Q: 交了钱不想学了可以退款吗？</h4>
-                <p>A: 开课后 7 天内，学完第一节不满意可全额退款。我们相信课程质量会让你留下。</p>
+                <h4 data-i18n="faq_5_q">Q: 交了钱不想学了可以退款吗？</h4>
+                <p data-i18n="faq_5_a">A: 开课后 7 天内，学完第一节不满意可全额退款。我们相信课程质量会让你留下。</p>
             </div>
         </div>
     </section>
@@ -770,16 +802,16 @@
     <!-- CTA Section -->
     <section class="cta-section" id="contact">
         <div class="container">
-            <h2>🎯 立即报名，开启 AI 进阶之路</h2>
-            <p>前 100 名报名送价值 ¥199 的提示词秘籍</p>
-            <a href="#" class="cta-button" id="wechat-link">添加微信咨询</a>
+            <h2 data-i18n="cta_title">🎯 立即报名，开启 AI 进阶之路</h2>
+            <p data-i18n="cta_bonus">前 100 名报名送价值 ¥199 的提示词秘籍</p>
+            <a href="#" class="cta-button" id="wechat-link" data-i18n="cta_button">添加微信咨询</a>
             <p style="margin-top: 15px; font-size: 0.95rem; opacity: 0.9;">
-                微信：<strong style="color: #1a1a2e;">[待 CEO 提供]</strong>
+                <span data-i18n="wechat_label">微信：</span><strong style="color: #1a1a2e;" data-i18n="wechat_value">[待 CEO 提供]</strong>
             </p>
             <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">
-                邮箱：<a href="mailto:hello@100000mrr.com" style="color: #1a1a2e; text-decoration: underline;">hello@100000mrr.com</a>
+                <span data-i18n="email_label">邮箱：</span><a href="mailto:hello@100000mrr.com" style="color: #1a1a2e; text-decoration: underline;">hello@100000mrr.com</a>
             </p>
-            <p style="margin-top: 25px; font-size: 0.85rem; opacity: 0.7;">
+            <p style="margin-top: 25px; font-size: 0.85rem; opacity: 0.7;" data-i18n="cta_discount">
                 ⏰ 限时优惠：原价 ¥599，现价仅需 ¥299
             </p>
         </div>
@@ -790,11 +822,273 @@
         <div class="container">
             <p>&copy; 2026 100000MRR. All rights reserved.</p>
             <p style="margin-top: 10px;">
-                <a href="#">隐私政策</a> |
-                <a href="#">服务条款</a> |
-                <a href="#">退款政策</a>
+                <a href="#" data-i18n="footer_privacy">隐私政策</a> |
+                <a href="#" data-i18n="footer_terms">服务条款</a> |
+                <a href="#" data-i18n="footer_refund">退款政策</a>
             </p>
         </div>
     </footer>
+
+    <!-- i18n Script -->
+    <script>
+        // Translation dictionary
+        const translations = {
+            zh: {
+                page_title: "AI 技能提升计划 | 100000MRR",
+                page_desc: "普通人也能学会的 AI 实战课 - 30 天掌握 AI 工具，提升工作效率，开启副业收入",
+                hero_title: "🚀 AI 技能提升计划",
+                hero_highlight: "30 天",
+                hero_subtitle: "掌握 AI 工具，让工作效率翻倍<br>开启副业收入，做不被淘汰的职场人",
+                hero_cta: "立即报名 - 限时特惠 ¥299",
+                hero_secondary: "了解课程详情 ↓",
+                pain_title: "你是否也有这些困扰？",
+                pain_subtitle: "AI 时代来了，但不知道从哪里开始",
+                pain_1_title: "😰 担心被 AI 淘汰",
+                pain_1_desc: "看到别人用 AI 提效，自己却不会用，怕被职场淘汰",
+                pain_2_title: "😵 信息太多学不会",
+                pain_2_desc: "网上教程太散，今天学这个明天学那个，始终不成体系",
+                pain_3_title: "😤 学了用不上",
+                pain_3_desc: "学了一堆理论，遇到实际问题还是不会解决",
+                pain_4_title: "😫 没时间学习",
+                pain_4_desc: "工作太忙，碎片时间不知道如何有效利用",
+                value_title: "这门课能给你什么？",
+                value_subtitle: "不是理论灌输，而是实战能力提升",
+                value_1_title: "体系化课程",
+                value_1_desc: "从 0 到 1 系统学习，不用自己摸索",
+                value_2_title: "场景化实战",
+                value_2_desc: "学完就能用，解决工作实际问题",
+                value_3_title: "副业变现指南",
+                value_3_desc: "教你用 AI 技能接私活、做自媒体",
+                value_4_title: "社群共学",
+                value_4_desc: "和志同道合的同学一起进步",
+                content_title: "课程内容包括",
+                content_subtitle: "4 周系统学习 + 实战练习 + 社群答疑",
+                content_1_title: "AI 工具入门",
+                content_1_desc: "主流 AI 工具对比与选择，快速上手不迷路",
+                content_2_title: "提示词工程",
+                content_2_desc: "写出高质量提示词，让 AI 输出你想要的结果",
+                content_3_title: "办公效率提升",
+                content_3_desc: "用 AI 写文档、做表格、生成 PPT，效率翻倍",
+                content_4_title: "内容创作实战",
+                content_4_desc: "用 AI 写文章、做视频、运营自媒体",
+                content_5_title: "副业变现路径",
+                content_5_desc: "接私活、做课程、知识付费实操指南",
+                content_6_title: "社群答疑 + 作业批改",
+                content_6_desc: "遇到问题有人解答，作业有人点评",
+                content_7_title: "终身学习资源",
+                content_7_desc: "课程永久回放，持续更新最新玩法",
+                content_8_title: "结业证书",
+                content_8_desc: "完成课程获得认证，丰富简历",
+                pricing_title: "选择适合你的方案",
+                pricing_subtitle: "限时优惠，投资自己最好的时机",
+                price_period: "/ 永久",
+                pricing_badge: "🔥 最受欢迎",
+                pricing_1_name: "🌱 自学版",
+                pricing_1_old: "原价 ¥199",
+                pricing_1_1: "全部视频课程",
+                pricing_1_2: "课程资料包",
+                pricing_1_3: "提示词模板库",
+                pricing_1_4: "永久回看权限",
+                pricing_1_cta: "立即学习",
+                pricing_2_name: "🚀 实战版",
+                pricing_2_old: "原价 ¥599",
+                pricing_2_1: "全部视频课程",
+                pricing_2_2: "课程资料包 + 提示词模板库",
+                pricing_2_3: "社群答疑 (30 天)",
+                pricing_2_4: "作业批改 + 点评",
+                pricing_2_5: "结业证书",
+                pricing_2_6: "副业资源对接",
+                pricing_2_cta: "立即报名",
+                pricing_3_name: "💎 VIP 版",
+                pricing_3_old: "原价 ¥1999",
+                pricing_3_1: "实战版全部内容",
+                pricing_3_2: "1v1 个人咨询 (2 小时)",
+                pricing_3_3: "副业项目指导",
+                pricing_3_4: "终身社群权限",
+                pricing_3_5: "内推机会",
+                pricing_3_6: "线下活动优先",
+                pricing_3_cta: "咨询报名",
+                testimonial_title: "学员反馈",
+                testimonial_subtitle: "看他们如何用 AI 改变自己",
+                testimonial_1: "\"上完课第二周就用 AI 帮公司自动化了报表流程，老板给我加了薪。学费早就赚回来了！\"",
+                testimonial_1_name: "李先生",
+                testimonial_1_role: "数据分析师，32 岁",
+                testimonial_2: "\"我是全职妈妈，学完后开始接文案私活，现在月收入稳定在 8000+，时间还自由。\"",
+                testimonial_2_name: "张女士",
+                testimonial_2_role: "自由职业者，29 岁",
+                testimonial_3: "\"大学生一枚，学完用 AI 做自媒体，现在小红书粉丝 2 万 +，广告收入比实习工资还高。\"",
+                testimonial_3_name: "王同学",
+                testimonial_3_role: "大三学生，21 岁",
+                faq_title: "常见问题",
+                faq_1_q: "Q: 我没有编程基础，能学会吗？",
+                faq_1_a: "A: 完全可以！课程专为零基础设计，不需要任何编程或技术背景。我们教你的是如何\"使用\"AI 工具，而不是\"开发\"AI。",
+                faq_2_q: "Q: 每天需要花多少时间学习？",
+                faq_2_a: "A: 课程视频每节 10-20 分钟，建议每天投入 30-60 分钟。周末可以花 2-3 小时完成实战练习。碎片时间也能学！",
+                faq_3_q: "Q: 学完后真的能变现吗？",
+                faq_3_a: "A: 课程包含完整的变现路径指导，但收入取决于个人努力。我们会提供资源对接和实战指导，帮你迈出第一步。",
+                faq_4_q: "Q: 课程是直播还是录播？",
+                faq_4_a: "A: 核心课程是录播，可以永久回看。定期会有直播答疑和加餐内容，直播也会录屏回放。",
+                faq_5_q: "Q: 交了钱不想学了可以退款吗？",
+                faq_5_a: "A: 开课后 7 天内，学完第一节不满意可全额退款。我们相信课程质量会让你留下。",
+                cta_title: "🎯 立即报名，开启 AI 进阶之路",
+                cta_bonus: "前 100 名报名送价值 ¥199 的提示词秘籍",
+                cta_button: "添加微信咨询",
+                wechat_label: "微信：",
+                wechat_value: "[待 CEO 提供]",
+                email_label: "邮箱：",
+                cta_discount: "⏰ 限时优惠：原价 ¥599，现价仅需 ¥299",
+                footer_privacy: "隐私政策",
+                footer_terms: "服务条款",
+                footer_refund: "退款政策"
+            },
+            en: {
+                page_title: "AI Skills Enhancement Program | 100000MRR",
+                page_desc: "AI practical course for everyone - Master AI tools in 30 days, boost productivity, and start side income",
+                hero_title: "🚀 AI Skills Enhancement Program",
+                hero_highlight: "30 Days",
+                hero_subtitle: "Master AI tools, double your work efficiency<br>Start side income, be an irreplaceable professional",
+                hero_cta: "Enroll Now - Limited Offer ¥299",
+                hero_secondary: "Learn More ↓",
+                pain_title: "Do You Have These Concerns?",
+                pain_subtitle: "AI era is here, but you don't know where to start",
+                pain_1_title: "😰 Fear of Being Replaced by AI",
+                pain_1_desc: "Seeing others use AI for efficiency while you can't, worried about being left behind",
+                pain_2_title: "😵 Too Much Information to Learn",
+                pain_2_desc: "Online tutorials are scattered, learning here and there without a system",
+                pain_3_title: "😤 Can't Apply What You Learn",
+                pain_3_desc: "Learned a lot of theory, still can't solve practical problems",
+                pain_4_title: "😫 No Time to Learn",
+                pain_4_desc: "Too busy with work, don't know how to use fragmented time effectively",
+                value_title: "What This Course Gives You?",
+                value_subtitle: "Not theory dumping, but practical capability building",
+                value_1_title: "Systematic Curriculum",
+                value_1_desc: "Learn systematically from 0 to 1, no need to figure out alone",
+                value_2_title: "Scenario-based Practice",
+                value_2_desc: "Use immediately after learning, solve real work problems",
+                value_3_title: "Side Income Guide",
+                value_3_desc: "Learn to take freelance projects and run social media with AI",
+                value_4_title: "Community Learning",
+                value_4_desc: "Learn together with like-minded classmates",
+                content_title: "Course Content Includes",
+                content_subtitle: "4 weeks systematic learning + practice + community Q&A",
+                content_1_title: "AI Tools Introduction",
+                content_1_desc: "Compare and choose mainstream AI tools, get started quickly",
+                content_2_title: "Prompt Engineering",
+                content_2_desc: "Write high-quality prompts to get desired AI outputs",
+                content_3_title: "Office Productivity",
+                content_3_desc: "Use AI to write docs, create spreadsheets, generate PPTs",
+                content_4_title: "Content Creation Practice",
+                content_4_desc: "Use AI to write articles, make videos, run social media",
+                content_5_title: "Monetization Path",
+                content_5_desc: "Freelance, course creation, knowledge payment guide",
+                content_6_title: "Community Q&A + Homework Review",
+                content_6_desc: "Get answers when stuck, receive homework feedback",
+                content_7_title: "Lifetime Learning Resources",
+                content_7_desc: "Lifetime course access, continuous updates",
+                content_8_title: "Completion Certificate",
+                content_8_desc: "Get certified upon completion, enrich your resume",
+                pricing_title: "Choose Your Plan",
+                pricing_subtitle: "Limited offer, best time to invest in yourself",
+                price_period: "/ lifetime",
+                pricing_badge: "🔥 Most Popular",
+                pricing_1_name: "🌱 Self-Study",
+                pricing_1_old: "Was ¥199",
+                pricing_1_1: "All video courses",
+                pricing_1_2: "Course materials pack",
+                pricing_1_3: "Prompt template library",
+                pricing_1_4: "Lifetime access",
+                pricing_1_cta: "Start Learning",
+                pricing_2_name: "🚀 Practical",
+                pricing_2_old: "Was ¥599",
+                pricing_2_1: "All video courses",
+                pricing_2_2: "Course materials + prompt library",
+                pricing_2_3: "Community Q&A (30 days)",
+                pricing_2_4: "Homework review + feedback",
+                pricing_2_5: "Completion certificate",
+                pricing_2_6: "Side income resources",
+                pricing_2_cta: "Enroll Now",
+                pricing_3_name: "💎 VIP",
+                pricing_3_old: "Was ¥1999",
+                pricing_3_1: "Everything in Practical",
+                pricing_3_2: "1v1 personal consulting (2 hours)",
+                pricing_3_3: "Side income project guidance",
+                pricing_3_4: "Lifetime community access",
+                pricing_3_5: "Job referral opportunities",
+                pricing_3_6: "Priority for offline events",
+                pricing_3_cta: "Contact for Enrollment",
+                testimonial_title: "Student Feedback",
+                testimonial_subtitle: "See how they changed themselves with AI",
+                testimonial_1: "\"Used AI to automate our company's reporting process in the second week after the course. My boss gave me a raise. The tuition paid for itself!\"",
+                testimonial_1_name: "Mr. Li",
+                testimonial_1_role: "Data Analyst, 32 years old",
+                testimonial_2: "\"I'm a stay-at-home mom. After the course, I started taking copywriting freelance work. Now my monthly income is stable at 8000+, with flexible time.\"",
+                testimonial_2_name: "Ms. Zhang",
+                testimonial_2_role: "Freelancer, 29 years old",
+                testimonial_3: "\"College student here. After learning, I used AI for social media. Now I have 20k+ followers on Xiaohongshu, ad revenue exceeds my internship salary.\"",
+                testimonial_3_name: "Student Wang",
+                testimonial_3_role: "Junior student, 21 years old",
+                faq_title: "FAQ",
+                faq_1_q: "Q: I have no programming background, can I learn?",
+                faq_1_a: "A: Absolutely! The course is designed for beginners, no programming or technical background needed. We teach you how to \"use\" AI tools, not \"develop\" AI.",
+                faq_2_q: "Q: How much time do I need to spend daily?",
+                faq_2_a: "A: Each video is 10-20 minutes. We recommend 30-60 minutes daily. Spend 2-3 hours on weekends for practice. Perfect for fragmented time!",
+                faq_3_q: "Q: Can I really monetize after learning?",
+                faq_3_a: "A: The course includes complete monetization guidance, but income depends on your effort. We provide resources and practical guidance to help you take the first step.",
+                faq_4_q: "Q: Is the course live or recorded?",
+                faq_4_a: "A: Core courses are recorded for lifetime access. We have regular live Q&A sessions and bonus content. Live sessions are also recorded for replay.",
+                faq_5_q: "Q: Can I get a refund if I change my mind?",
+                faq_5_a: "A: Within 7 days after the course starts, if you're not satisfied after completing the first lesson, you can get a full refund. We believe our course quality will keep you.",
+                cta_title: "🎯 Enroll Now, Start Your AI Journey",
+                cta_bonus: "First 100 enrollments get prompt secrets worth ¥199",
+                cta_button: "Add WeChat for Consultation",
+                wechat_label: "WeChat: ",
+                wechat_value: "[To be provided by CEO]",
+                email_label: "Email: ",
+                cta_discount: "⏰ Limited Offer: Was ¥599, now only ¥299",
+                footer_privacy: "Privacy Policy",
+                footer_terms: "Terms of Service",
+                footer_refund: "Refund Policy"
+            }
+        };
+
+        // Current language state
+        let currentLang = localStorage.getItem('lang') || 'zh';
+
+        // Update language function
+        function updateLanguage(lang) {
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    el.innerHTML = translations[lang][key];
+                }
+            });
+
+            // Update html lang attribute
+            document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+
+            // Update button text
+            const btn = document.getElementById('lang-switcher');
+            btn.textContent = lang === 'zh' ? 'EN' : '中文';
+
+            // Save to localStorage
+            localStorage.setItem('lang', lang);
+            currentLang = lang;
+        }
+
+        // Toggle language function
+        function toggleLanguage() {
+            const newLang = currentLang === 'zh' ? 'en' : 'zh';
+            updateLanguage(newLang);
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            updateLanguage(currentLang);
+
+            // Add click event to language switcher
+            document.getElementById('lang-switcher').addEventListener('click', toggleLanguage);
+        });
+    </script>
 </body>
 </html>
