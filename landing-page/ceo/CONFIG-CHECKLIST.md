@@ -1,0 +1,154 @@
+# CEO 配置事项检查清单
+
+**创建日期**: 2026-03-28
+**截止日期**: 2026-03-30
+**状态**: ⏳ 待确认
+
+---
+
+## 待确认事项总览
+
+| 事项 | 优先级 | 截止日 | 状态 | 负责人 |
+|------|--------|--------|------|--------|
+| 微信咨询号 | 高 | 3/28 | ⏳ 待提供 | CEO |
+| 百度统计 ID | 高 | 3/28 | ⏳ 待申请 | CEO |
+| 域名购买 | 中 | 3/30 | ⏳ 待决策 | CEO |
+| 收款码/支付方式 | 高 | 3/30 | ⏳ 待配置 | CEO |
+| Warm intro 名单 | 高 | 3/29 | ✅ 框架 ready | CEO |
+
+---
+
+## 1. 微信咨询号 (截止：3/28)
+
+### 当前状态
+Landing page 上的占位符：`[待 CEO 提供]`
+
+### 待提供信息
+- **个人微信号** 或 **企业微信号**
+- 用于接收课程咨询
+
+### 需要修改的文件
+- `landing-page/landing-page/index.html` (line 777)
+- 格式：`微信：your_wechat_id`
+
+### 执行后验证
+```bash
+# 在 index.html 中搜索 "[待 CEO 提供]" 并替换为实际微信号
+```
+
+---
+
+## 2. 百度统计 ID (截止：3/28)
+
+### 申请方式
+1. 访问 https://tongji.baidu.com/
+2. 注册/登录百度账号
+3. 创建新站点，获取统计代码 ID
+4. ID 格式如：`a1b2c3d4e5f6g7h8i9j0`
+
+### 需要修改的文件
+- `landing-page/landing-page/index.html` (line 13)
+- 将 `hm.src = "https://hm.baidu.com/hm.js?";`
+- 改为 `hm.src = "https://hm.baidu.com/hm.js?YOUR_ACTUAL_ID";`
+
+---
+
+## 3. 域名购买 (截止：3/30)
+
+### 选项对比
+
+| 方案 | 费用 | 优点 | 缺点 |
+|------|------|------|------|
+| GitHub Pages (免费) | ¥0 | 快速部署，免费 | 域名较长 |
+| Vercel (免费) | ¥0 | 自动 HTTPS，CDN | 域名较长 |
+| 自定义域名 | ~¥50/年 | 品牌专业 | 需额外配置 |
+
+### 推荐域名
+- `100000mrr.com`
+- `ai-skill-up.com`
+- `aizhisheng.com`
+
+### 购买渠道
+- 阿里云：https://wanwang.aliyun.com/domain
+- 腾讯云：https://cloud.tencent.com/product/domain
+
+---
+
+## 4. 收款码/支付方式 (截止：3/30)
+
+### 待配置
+
+| 支付方式 | 状态 | 备注 |
+|----------|------|------|
+| 微信支付 | ⏳ 待配置 | 个人收款码/企业收款码 |
+| 支付宝 | ⏳ 待配置 | 个人收款码/企业收款码 |
+| 银行卡 | ⏳ 待配置 | 备用方案 |
+
+### 执行步骤
+1. 准备收款码图片
+2. 上传到 landing page 仓库
+3. 在咨询流程中引导用户支付
+
+---
+
+## 5. Warm Intro 名单 (截止：3/29)
+
+### 状态
+✅ 框架已完成，已填充 20 人示例模板
+
+### 文件位置
+- `ceo/warm-intro-list.md`
+- `landing-page/ceo/warm-intro-list.md`
+
+### 下一步
+- 用真实联系人替换示例名字
+- 添加微信号/联系方式
+- 开始发送 outreach 消息
+
+---
+
+## 需要修改的文件汇总
+
+### landing-page/landing-page/index.html
+
+需要修改的位置：
+
+1. **Line 13** - 百度统计 ID
+```html
+<!-- 修改前 -->
+hm.src = "https://hm.baidu.com/hm.js?";
+
+<!-- 修改后 -->
+hm.src = "https://hm.baidu.com/hm.js?a1b2c3d4e5f6g7h8";
+```
+
+2. **Line 777** - 微信咨询号
+```html
+<!-- 修改前 -->
+微信：<strong style="color: #1a1a2e;">[待 CEO 提供]</strong>
+
+<!-- 修改后 -->
+微信：<strong style="color: #1a1a2e;">your_wechat_id</strong>
+```
+
+---
+
+## 执行记录
+
+| 日期 | 事项 | 操作 | 执行人 |
+|------|------|------|--------|
+| 2026-03-28 | Warm intro 名单 | 完成框架和示例填充 | CEO |
+| | | | |
+
+---
+
+## 备注
+
+- 所有配置完成后，需要测试 landing page 正常显示
+- 百度统计需要在后台验证数据是否正常上报
+- 收款码需要测试支付流程是否顺畅
+
+---
+
+*Created: 2026-03-28*
+*CEO Office - 100000MRR*

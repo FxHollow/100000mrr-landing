@@ -1,0 +1,51 @@
+{
+  "name": "100000mrr-backend",
+  "version": "0.1.0",
+  "description": "Backend API for 100000MRR SaaS platform",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "swagger": "node swagger.js",
+    "test": "jest --coverage",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "db:migrate": "prisma migrate dev",
+    "db:generate": "prisma generate",
+    "db:seed": "node prisma/seed.js",
+    "db:studio": "prisma studio"
+  },
+  "keywords": [
+    "saas",
+    "api",
+    "backend"
+  ],
+  "author": "Backend Engineer",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "dotenv": "^16.3.1",
+    "winston": "^3.11.0",
+    "@prisma/client": "^5.7.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "zod": "^3.22.4",
+    "express-rate-limit": "^7.1.5",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "jest": "^29.7.0",
+    "eslint": "^8.55.0",
+    "@types/node": "^20.10.0",
+    "prisma": "^5.7.0",
+    "supertest": "^6.3.3",
+    "swagger-ui-express": "^5.0.0",
+    "swagger-autogen": "^2.23.7"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

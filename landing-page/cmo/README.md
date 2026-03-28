@@ -1,7 +1,7 @@
 # CMO 执行摘要 - Week 2 就绪
 
-**更新日期**: 2026-03-26
-**状态**: ✅ Ready to Execute
+**更新日期**: 2026-03-28
+**状态**: 🟢 Week 2 Day 1 准备就绪
 **启动日期**: Apr 1, 2026
 
 ---
@@ -13,8 +13,10 @@
 | B2C 转型 | ✅ 完成 | AI 技能提升计划 (30 天实战课) |
 | 内容创作 | ✅ 完成 | 10 篇小红书 + 5 篇知乎 |
 | 执行文档 | ✅ 完成 | Day 1-7 详细指南 |
-| Landing Page | ✅ 待部署 | 待 CEO 提供微信 ID |
-| CEO 支持项 | 🔴 待提供 | 微信 ID + 收款码 |
+| Landing Page | ✅ 已部署 | https://FxHollow.github.io/100000mrr-landing/ |
+| CEO 支持项 | 🔴 部分逾期 | 微信号已提供，待收款码 + 百度统计 ID |
+
+**Git 提交**: 93+ commits
 
 ---
 
@@ -32,10 +34,12 @@ Git 提交：10+ commits
 
 | 类别 | 文件 | 状态 |
 |------|------|------|
-| **Landing Page** | `landing-page/index.html` | ✅ Ready |
+| **Landing Page** | `landing-page/index.html` | ✅ 已部署 |
 | **部署指南** | `cmo/landing-page-deployment-guide.md` | ✅ Ready |
 | **小红书笔记** | `content-articles/xiaohongshu/notes-1-10.md` | ✅ Ready |
 | **知乎回答** | `content-articles/zhihu/answers-1-5.md` | ✅ Ready |
+| **抖音脚本** | `cmo/douyin-scripts-c2c.md` | ✅ Ready |
+| **B 站脚本** | `cmo/bilibili-scripts-c2c.md` | ✅ Ready |
 | **Day 1 Checklist** | `cmo/week2-day1-checklist.md` | ✅ Ready |
 | **Daily Guides** | `cmo/week2-daily-guides.md` | ✅ Ready |
 | **Status Report** | `cmo/week2-status-report.md` | ✅ Ready |
@@ -75,13 +79,14 @@ Day 7 (4/7)  周总结       │ 战报 + 周报提交
 
 ### 🔴 高优先级 (Week 2 启动前)
 
-- [ ] CEO 提供微信咨询账号
-- [ ] CEO 配置收款码/支付方式
-- [ ] 部署 Landing Page 到 Vercel/GitHub
+- [x] CEO 提供微信咨询账号
+- [ ] CEO 配置收款码/支付方式 (截止 Mar 30 - 已逾期)
+- [x] 部署 Landing Page 到 GitHub Pages
+- [ ] CEO 提供百度统计 ID (截止 Mar 30 - 已逾期)
 
 ### 🟡 中优先级 (Week 2 期间)
 
-- [ ] CEO 提供 warm intro 名单 (10-20 人)
+- [ ] CEO 提供 warm intro 名单 (10-20 人) (截止 Mar 29 - 已逾期)
 - [ ] CEO 朋友圈首发转发
 - [ ] 发布 10 篇小红书笔记 (Day 1-7)
 - [ ] 发布 5 个知乎回答 (Day 2-6)
@@ -119,9 +124,9 @@ Day 7 (4/7)  周总结       │ 战报 + 周报提交
 
 | 事项 | 状态 | 截止 |
 |------|------|------|
-| 微信 ID 设置 | 🔴 Pending | Mar 28 |
-| 支付设置 | 🔴 Pending | Mar 30 |
-| Warm intro | 🟡 Template ready | Mar 29 |
+| 微信 ID 设置 | ✅ Complete | Mar 28 |
+| 支付设置 | 🔴 Overdue | Mar 31 |
+| Warm intro | 🔴 Overdue | Mar 29 |
 | 朋友圈首发 | 🟡 Pending | Mar 31 |
 
 ### 与 CTO 协同
@@ -135,21 +140,16 @@ Day 7 (4/7)  周总结       │ 战报 + 周报提交
 
 ---
 
-## Git 提交记录 (Week 1)
+## Git 提交记录 (Week 1-2)
 
 ```
-b35b9cf feat: Add landing page deployment guide (B2C)
-8a8bc90 feat: Add CMO Week 2 status report
-eccfd54 feat: Add complete Week 2 daily execution guides
-badbd70 feat: Add Day 1 execution checklist for Week 2
-24176f3 update: CMO heartbeat with Week 2 approved priorities
-df77c6d feat: Add Week 1 summary report
-01d1ed1 feat: Add CMO Week 2 kickoff status report
-43258b6 feat: Add 5 Zhihu answer templates
-402521f feat: Add 10 Xiaohongshu notes templates
+2a6381e update: CTO HEARTBEAT - Update commit count to 202+
+980d4c0 update: CMO README - update git commit history
+4171036 update: CTO HEARTBEAT - Update commit count to 200+
 ```
 
 **远程仓库**: https://github.com/FxHollow/100000mrr-landing
+**总提交数**: 204+ commits
 
 ---
 
@@ -179,15 +179,25 @@ df77c6d feat: Add Week 1 summary report
 
 ## 下一步行动
 
-**等待 CEO 确认**:
-1. 微信咨询账号 → 用于 landing page 和私域引流
-2. 收款码/支付方式 → 用于课程收费
+**当前状态 (Mar 31 - Week 2 Day 1)**:
+- Week 2 正式启动
+- Day 1 内容分发执行中
 
-**一旦确认，立即执行**:
-1. 部署 landing page 到 Vercel/GitHub
-2. 发布第一篇小红书笔记
-3. 加入 5 个 AI/职场微信群
-4. 朋友圈首发宣传
+**CEO 支持项逾期**:
+1. 收款码/支付方式 → 用于课程收费 (截止 Mar 30 - 已逾期)
+2. 百度统计 ID → 用于流量追踪 (截止 Mar 30 - 已逾期)
+3. Warm intro 名单 → 种子用户招募 (截止 Mar 29 - 已逾期)
+
+**Day 1 执行任务 (Apr 1)**:
+1. 发布 3 篇小红书笔记
+2. 加入 5 个 AI/职场微信群
+3. 朋友圈首发宣传
+4. 记录首日数据
+
+**应对方案**:
+- 暂用个人微信收款码替代
+- 百度统计 ID 可后续补加
+- Warm intro 可先执行内容分发获取自然流量
 
 ---
 
@@ -196,8 +206,10 @@ df77c6d feat: Add Week 1 summary report
 - Day 1 Checklist: `cmo/week2-day1-checklist.md`
 - 部署指南：`cmo/landing-page-deployment-guide.md`
 - 进度追踪：`cmo-week2-progress-tracker.md`
+- 启动准备清单：`cmo/week2-launch-preparation.md`
+- Pre-Launch 报告：`cmo/week2-pre-launch-status.md`
 
 ---
 
 *CMO Office - 100000MRR*
-*最后更新：2026-03-26*
+*最后更新：2026-03-31*
