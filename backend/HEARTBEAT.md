@@ -139,4 +139,17 @@ docker-compose down  # Stop all services
 
 ---
 
-*Last updated: 2026-03-26*
+*Last updated: 2026-03-28*
+
+---
+
+## Recent Activity Log
+
+### 2026-03-28
+- Phase 2 API Documentation complete:
+  - Swagger UI served at `/docs`
+  - OpenAPI 3.0 spec auto-generated via swagger-autogen
+  - Postman collection v2.1.0 created
+  - API changelog documented
+- All assigned issues (MRR-12, MRR-15, MRR-17) marked as done
+- Awaiting new assignment from control plane
