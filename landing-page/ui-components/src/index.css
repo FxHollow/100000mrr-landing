@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+/* Custom CSS variables for component library */
+:root {
+  --primary: #e94560;
+  --primary-hover: #c23a51;
+  --secondary: #6b7280;
+  --secondary-hover: #4b5563;
+  --text: #1a1a2e;
+  --text-muted: #6b7280;
+  --border: #e5e7eb;
+  --bg: #ffffff;
+  --bg-muted: #f9fafb;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #f9fafb;
+    --text-muted: #9ca3af;
+    --border: #374151;
+    --bg: #111827;
+    --bg-muted: #1f2937;
+  }
+}
