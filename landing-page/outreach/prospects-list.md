@@ -33,11 +33,16 @@
 
 | # | Company | Contact | Role | Source | ICP Fit | Priority | Status | Notes |
 |---|---------|---------|------|--------|---------|----------|--------|-------|
-| 1 | [待填写 - 电商公司] | [王总] | CEO | CEO warm intro | High | 1 | Not Contacted | CEO 推荐，做电商客服自动化 |
-| 2 | [待填写 - 制造企业] | [李总] | 总经理 | CTO warm intro | High | 1 | Not Contacted | CTO 前同事，宁波制造企业 |
-| 3 | [待填写 - SaaS  startup] | 张总 | Founder | 投资人推荐 | High | 1 | Not Contacted | Series A，需要 AI 功能集成 |
-| 4 | [待填写 - 分销公司] | 陈经理 | 运营总监 | 前客户 | Medium | 2 | Not Contacted | 之前合作过，有预算 |
-| 5 | [待填写 - 品牌公司] | 林总 | 品牌总监 | 行业活动 | Medium | 2 | Not Contacted | 小红书认识，关注 AI 营销 |
+| 1 | - | 张敏 | HR/培训负责人 | CEO warm intro | High | 1 | Not Contacted | 前公司 HRD，负责 200+ 人培训 |
+| 2 | - | 李强 | HR/培训负责人 | CEO warm intro | High | 1 | Not Contacted | 某互联网公司培训总监，行业峰会认识 |
+| 3 | 小红书-AI 职场课 | 博主 | 职场/AI 垂类 KOL | CEO warm intro | High | 1 | Not Contacted | 5 万粉丝，专注 AI 办公技能 |
+| 4 | 知乎 - 高效办公指南 | 博主 | 职场/AI 垂类 KOL | CEO warm intro | High | 1 | Not Contacted | 10 万关注，专栏作者 |
+| 5 | - | 王芳 | 知识付费从业者 | CEO warm intro | High | 1 | Not Contacted | 前得到课程策划，现独立制作课程 |
+| 6 | - | 陈晨 | 知识付费从业者 | CEO warm intro | High | 1 | Not Contacted | 知识星球 3000+ 成员，课程分销 |
+| 7 | - | 赵磊 | 创业者/小企业主 | CEO warm intro | High | 1 | Not Contacted | CEO 朋友，科技公司创始人 30 人团队 |
+| 8 | - | 钱伟 | 创业者/小企业主 | CEO warm intro | Medium | 2 | Not Contacted | 创业者社群成员，电商公司老板 |
+| 9 | - | 孙娜 | 产品经理负责人 | CEO warm intro | High | 1 | Not Contacted | 前同事，某大厂产品总监 |
+| 10 | - | 周杰 | 运营负责人 | CEO warm intro | Medium | 2 | Not Contacted | 行业活动认识，新媒体运营总监 |
 
 ### WeChat Groups (Join and Identify)
 
