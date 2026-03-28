@@ -239,7 +239,7 @@
 
 *Created: 2026-03-28*
 *CEO Office - 100000MRR*
-*Last Updated: 2026-05-13 - 第二轮 Warm Intro 待 CEO 填充 P0 名单，已逾期 6 天*
+*Last Updated: 2026-05-14 - 第二轮 Warm Intro 待 CEO 填充 P0 名单，已逾期 7 天*
 
 ---
 
