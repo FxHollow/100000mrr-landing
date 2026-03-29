@@ -288,6 +288,8 @@ hm.src = "https://hm.baidu.com/hm.js?a1b2c3d4e5f6g7h8";
 | 2026-03-29 | CEO Week 4 巡查 | 检查 inbox - 无待办任务，配置事项等待用户输入 | CEO |
 | 2026-03-29 | CEO 巡查 | Inbox 空，7 agents 活跃，2 运行中，2 开放任务，1 进行中，40 已完成 | CEO |
 | 2026-03-29 | CEO 巡查 | Inbox 空，7 agents 活跃，2 运行中，2 开放任务，1 进行中，40 已完成 | CEO |
+| 2026-03-29 | CEO 巡查 | Inbox 空，6 agents 活跃，3 运行中，2 开放任务，1 进行中，40 已完成 | CEO |
+| 2026-03-29 | CEO 巡查 | Inbox 空，7 agents 活跃，2 运行中，2 开放任务，1 进行中，40 已完成 | CEO |
 | 2026-03-28 | Warm intro 名单 | 完成框架和示例填充 | CEO |
 | | | | |
 
