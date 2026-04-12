@@ -15,6 +15,7 @@ const { notFoundHandler, errorHandler } = require('./middleware/error');
 const authRoutes = require('./routes/auth');
 const moodRoutes = require('./routes/mood');
 const eventRoutes = require('./routes/events');
+const aiRoutes = require('./routes/ai');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -73,6 +74,7 @@ app.get('/health', (req, res) => {
 app.use(`/api/${API_VERSION}/auth`, authRoutes);
 app.use(`/api/${API_VERSION}/mood`, moodRoutes);
 app.use(`/api/${API_VERSION}/events`, eventRoutes);
+app.use(`/api/${API_VERSION}/ai`, aiRoutes);
 
 // API 信息
 app.get(`/api/${API_VERSION}`, (req, res) => {
@@ -99,6 +101,12 @@ app.get(`/api/${API_VERSION}`, (req, res) => {
         events: {
           list: `GET /api/${API_VERSION}/events`,
           stats: `GET /api/${API_VERSION}/events/stats`,
+        },
+        ai: {
+          analyze: `POST /api/${API_VERSION}/ai/analyze`,
+          predictions: `GET /api/${API_VERSION}/ai/predictions`,
+          history: `GET /api/${API_VERSION}/ai/history`,
+          alerts: `GET /api/${API_VERSION}/ai/alerts`,
         },
       },
     },
