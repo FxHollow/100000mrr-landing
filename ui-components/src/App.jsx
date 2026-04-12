@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Button, Card, Input, Badge, Avatar } from './components';
+import { Button, Card, Input, Badge, Avatar, Navigation } from './components';
 import './App.css';
 
 function App() {
@@ -307,6 +307,84 @@ function App() {
   <Avatar name="Bob" />
   <Avatar name="Charlie" />
 </div>`}</pre>
+        </div>
+      </section>
+
+      {/* Navigation Component Showcase */}
+      <section className="component-section">
+        <h2>Navigation</h2>
+        <p className="section-description">Responsive navigation bar with horizontal and vertical layouts.</p>
+
+        <div className="showcase-grid">
+          <div className="showcase-item">
+            <h3>Horizontal Navigation</h3>
+            <Navigation
+              variant="horizontal"
+              logo={<span style={{ fontWeight: 'bold', fontSize: '1.25rem' }}>Logo</span>}
+              items={[
+                { label: 'Home', href: '/', active: true },
+                { label: 'Products', href: '/products' },
+                { label: 'About', href: '/about' },
+                { label: 'Contact', href: '/contact' },
+              ]}
+            />
+          </div>
+
+          <div className="showcase-item">
+            <h3>With Right Content</h3>
+            <Navigation
+              variant="horizontal"
+              logo={<span style={{ fontWeight: 'bold', fontSize: '1.25rem' }}>Logo</span>}
+              items={[
+                { label: 'Dashboard', href: '/dashboard' },
+                { label: 'Settings', href: '/settings' },
+              ]}
+              rightContent={
+                <Button size="sm" variant="primary">Sign In</Button>
+              }
+            />
+          </div>
+
+          <div className="showcase-item">
+            <h3>Vertical Navigation (Sidebar)</h3>
+            <div style={{ height: '300px', border: '1px solid #e5e7eb', borderRadius: '0.5rem' }}>
+              <Navigation
+                variant="vertical"
+                logo={<span style={{ fontWeight: 'bold', fontSize: '1.25rem' }}>Logo</span>}
+                items={[
+                  { label: 'Overview', href: '/overview', active: true },
+                  { label: 'Analytics', href: '/analytics' },
+                  { label: 'Reports', href: '/reports' },
+                  { label: 'Settings', href: '/settings' },
+                ]}
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="code-block">
+          <pre>{`import { Navigation } from '@100000mrr/ui';
+
+// Horizontal Navigation
+<Navigation
+  variant="horizontal"
+  logo={<img src="/logo.svg" alt="Logo" />}
+  items={[
+    { label: 'Home', href: '/', active: true },
+    { label: 'Products', href: '/products' },
+  ]}
+  rightContent={<Button>Sign In</Button>}
+/>
+
+// Vertical Navigation (Sidebar)
+<Navigation
+  variant="vertical"
+  logo={<span>Logo</span>}
+  items={[
+    { label: 'Dashboard', href: '/dashboard', active: true },
+    { label: 'Settings', href: '/settings' },
+  ]}
+/>`}</pre>
         </div>
       </section>
 
