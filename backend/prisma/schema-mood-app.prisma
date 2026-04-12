@@ -1,0 +1,375 @@
+// Prisma schema for 情绪管理应用 MVP
+// 创建日期：2026-04-12
+// 设计者：后端工程师
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ============================================
+// 用户系统
+// ============================================
+
+model User {
+  id          String   @id @default(uuid())
+  email       String   @unique
+  password    String   // bcrypt 哈希
+  name        String?
+  avatar      String?
+  phone       String?  // 用于推送通知
+  role        Role     @default(USER)
+
+  // 用户画像
+  gender      Gender?
+  age         Int?
+  occupation  String?
+  relationshipStatus RelationshipStatus?
+
+  // 时间戳
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  lastLoginAt DateTime?
+
+  // 关系
+  moodEntries       MoodEntry[]
+  relationshipEvents RelationshipEvent[]
+  notifications      Notification[]
+  aiAnalyses         AIAnalysis[]
+  subscriptions      Subscription[]
+
+  @@index([email])
+  @@index([phone])
+}
+
+enum Role {
+  USER
+  ADMIN
+  SUPER_ADMIN
+}
+
+enum Gender {
+  MALE
+  FEMALE
+  OTHER
+  PREFER_NOT_TO_SAY
+}
+
+enum RelationshipStatus {
+  SINGLE
+  DATING
+  ENGAGED
+  MARRIED
+  DIVORCED
+  WIDOWED
+  COMPLICATED
+}
+
+// ============================================
+// 情绪日记
+// ============================================
+
+model MoodEntry {
+  id        String   @id @default(uuid())
+  userId    String
+
+  // 情绪评分 (1-10)
+  moodScore Int      @db.SmallInt
+
+  // 主要情绪标签 (多选)
+  emotions  EmotionType[]
+
+  // 情绪触发事件
+  trigger   String?  @db.Text
+
+  // 身体感受
+  physicalSensations String? @db.Text
+
+  // 想法/认知
+  thoughts  String?  @db.Text
+
+  // 行为反应
+  behaviors String?  @db.Text
+
+  // 强度 (1-5)
+  intensity Int      @default(3)
+
+  // 记录时间
+  entryTime DateTime
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // 关系
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([entryTime])
+  @@index([userId, entryTime])
+}
+
+enum EmotionType {
+  // 正面情绪
+  HAPPY
+  EXCITED
+  GRATEFUL
+  CALM
+  CONFIDENT
+  HOPEFUL
+
+  // 负面情绪
+  SAD
+  ANGRY
+  ANXIOUS
+  FRUSTRATED
+  LONELY
+  JEALOUS
+  GUILT
+  SHAME
+  FEAR
+  OVERWHELMED
+
+  // 中性
+  NEUTRAL
+  TIRED
+  BORED
+}
+
+// ============================================
+// 关系事件
+// ============================================
+
+model RelationshipEvent {
+  id          String   @id @default(uuid())
+  userId      String
+
+  // 事件类型
+  eventType   RelationshipEventType
+
+  // 事件对象（伴侣、家人、同事等）
+  targetPerson String?
+  relationship TargetRelationship?
+
+  // 事件描述
+  description String    @db.Text
+
+  // 事件结果（争吵、和解、冷战等）
+  outcome     EventOutcome?
+
+  // 事件强度 (1-5)
+  severity    Int       @default(3)
+
+  // 用户当时的情绪
+  moodAtEvent Int?      // 1-10
+
+  // 持续时间（分钟）
+  durationMinutes Int?
+
+  // 事件时间
+  eventTime   DateTime
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  // 关系
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([eventTime])
+  @@index([eventType])
+}
+
+enum RelationshipEventType {
+  // 正面事件
+  POSITIVE_CONVERSATION
+  DATE_NIGHT
+  GIFT_RECEIVED
+  SUPPORT_RECEIVED
+  MAKING_UP
+  INTIMACY
+  SHARED_ACTIVITY
+
+  // 负面事件
+  ARGUMENT
+  COLD_WAR
+  CRITICISM
+  DISAPPOINTMENT
+  BETRAYAL
+  BREAKUP_THOUGHT
+
+  // 日常
+  DAILY_INTERACTION
+  CHECK_IN
+  CONFLICT_RESOLUTION
+  OTHER
+}
+
+enum TargetRelationship {
+  PARTNER
+  SPOUSE
+  PARENT
+  CHILD
+  SIBLING
+  FRIEND
+  COLLEAGUE
+  BOSS
+  OTHER
+}
+
+enum EventOutcome {
+  POSITIVE
+  NEUTRAL
+  NEGATIVE
+  UNRESOLVED
+  RESOLVED
+  ESCALATED
+}
+
+// ============================================
+// AI 分析结果
+// ============================================
+
+model AIAnalysis {
+  id          String   @id @default(uuid())
+  userId      String
+
+  // 分析类型
+  analysisType AnalysisType
+
+  // 分析结果（JSON 格式）
+  result      Json
+
+  // 置信度 (0-1)
+  confidence  Float?
+
+  // 风险等级
+  riskLevel   RiskLevel @default(LOW)
+
+  // 预警标记
+  alertFlag   Boolean  @default(false)
+
+  // 建议内容
+  recommendations String? @db.Text
+
+  // 生成时间
+  createdAt   DateTime @default(now())
+
+  // 关系
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([analysisType])
+  @@index([riskLevel])
+}
+
+enum AnalysisType {
+  MOOD_TREND         // 情绪趋势分析
+  TRIGGER_PATTERN    // 触发因素模式
+  RELATIONSHIP_HEALTH // 关系健康度
+  CONFLICT_PREDICTION // 冲突预测
+  INTERVENTION_SUGGESTION // 干预建议
+}
+
+enum RiskLevel {
+  LOW
+  MEDIUM
+  HIGH
+  CRITICAL
+}
+
+// ============================================
+// 推送通知
+// ============================================
+
+model Notification {
+  id        String   @id @default(uuid())
+  userId    String
+
+  // 通知类型
+  type      NotificationType
+
+  // 标题
+  title     String
+
+  // 内容
+  message   String   @db.Text
+
+  // 是否已读
+  isRead    Boolean  @default(false)
+
+  // 发送时间
+  sentAt    DateTime?
+  readAt    DateTime?
+  createdAt DateTime @default(now())
+
+  // 关系
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([isRead])
+  @@index([createdAt])
+}
+
+enum NotificationType {
+  MOOD_CHECK_IN        // 情绪签到提醒
+  PATTERN_ALERT        // 模式预警
+  RELATIONSHIP_RISK    // 关系风险预警
+  INTERVENTION_TIP     // 干预建议
+  POSITIVE_REMINDER    // 积极提醒
+  ACHIEVEMENT          // 成就通知
+  SYSTEM               // 系统通知
+}
+
+// ============================================
+// 订阅/会员
+// ============================================
+
+model Subscription {
+  id            String   @id @default(uuid())
+  userId        String   @unique
+
+  // 订阅类型
+  plan          SubscriptionPlan @default(FREE)
+
+  // 订阅状态
+  status        SubscriptionStatus @default(ACTIVE)
+
+  // 订阅周期
+  startDate     DateTime
+  endDate       DateTime?
+
+  // 自动续期
+  autoRenew     Boolean  @default(false)
+
+  // 支付信息
+  paymentMethod String?
+  lastPaymentAt DateTime?
+  nextBillingAt DateTime?
+
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  // 关系
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([plan])
+  @@index([status])
+}
+
+enum SubscriptionPlan {
+  FREE
+  BASIC      // ¥29/月
+  PREMIUM    // ¥99/月
+  ANNUAL     // ¥999/年
+}
+
+enum SubscriptionStatus {
+  ACTIVE
+  EXPIRED
+  CANCELLED
+  PAST_DUE
+  TRIAL
+}
