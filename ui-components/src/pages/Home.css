@@ -1,0 +1,354 @@
+.home-container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 16px;
+  padding-bottom: 80px;
+  background: linear-gradient(180deg, #f0f9ff 0%, #ffffff 100%);
+  min-height: 100vh;
+}
+
+/* Header */
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0 16px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-text h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+.date-text {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 2px 0 0;
+}
+
+/* Cards Common */
+.mood-summary-card,
+.emotion-record-card,
+.relationship-card,
+.suggestions-card {
+  margin-bottom: 16px;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.section-icon {
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+/* Mood Summary */
+.mood-summary-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.mood-summary-header h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
+  margin: 0;
+}
+
+.mood-score {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.score-value {
+  font-size: 48px;
+  font-weight: 700;
+  color: #3b82f6;
+}
+
+.score-label {
+  font-size: 16px;
+  color: #9ca3af;
+}
+
+.mood-trend {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.trend-indicator {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.trend-indicator.up {
+  color: #10b981;
+}
+
+.trend-text {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Emotion Record */
+.emotion-record-card h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
+  margin: 0 0 4px;
+}
+
+.record-subtitle {
+  font-size: 13px;
+  color: #9ca3af;
+  margin: 0 0 16px;
+}
+
+.emotion-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.emotion-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 12px 4px;
+  background: #f9fafb;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.emotion-btn:hover {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+}
+
+.emotion-btn.selected {
+  background: #dbeafe;
+  border-color: #3b82f6;
+}
+
+.emotion-emoji {
+  font-size: 24px;
+}
+
+.emotion-label {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.emotion-btn.selected .emotion-label {
+  color: #1d4ed8;
+  font-weight: 500;
+}
+
+.emotion-detail {
+  border-top: 1px solid #f3f4f6;
+  padding-top: 16px;
+}
+
+.emotion-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  resize: none;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+}
+
+.emotion-textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.submit-btn {
+  padding: 12px;
+}
+
+/* Relationship Health */
+.relationship-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.relationship-header h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
+  margin: 0;
+  flex: 1;
+}
+
+.health-score {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.score-circle {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.circle-chart {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.circle-bg {
+  stroke: #f3f4f6;
+}
+
+.circle-path {
+  transition: stroke-dasharray 0.5s ease;
+}
+
+.circle-score {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.score-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+
+.detail-row span:first-child {
+  color: #6b7280;
+}
+
+.health-tip {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  background: #fef3c7;
+  border-radius: 8px;
+}
+
+.tip-icon {
+  font-size: 20px;
+}
+
+.tip-content {
+  flex: 1;
+}
+
+.tip-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #92400e;
+  margin: 0 0 4px;
+}
+
+.tip-desc {
+  font-size: 12px;
+  color: #b45309;
+  margin: 0;
+}
+
+/* Suggestions */
+.suggestions-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.suggestions-header h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
+  margin: 0;
+}
+
+.suggestions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.suggestion-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: #f9fafb;
+  border-radius: 8px;
+}
+
+.suggestion-info h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  margin: 0 0 4px;
+}
+
+.suggestion-meta {
+  font-size: 12px;
+  color: #9ca3af;
+  margin: 0;
+}
+
+/* Quick Actions */
+.quick-actions {
+  display: flex;
+  gap: 12px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 480px;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid #e5e7eb;
+  box-sizing: border-box;
+}
+
+.action-btn {
+  flex: 1;
+  padding: 14px;
+  font-size: 15px;
+}
