@@ -74,70 +74,6 @@ router.get('/', async (req, res) => {
 });
 
 /**
- * GET /api/v1/courses/:slug
- * Get course details by slug
- */
-router.get('/:slug', async (req, res) => {
-  try {
-    const { slug } = req.params;
-
-    const course = await prisma.course.findUnique({
-      where: { slug },
-      include: {
-        chapters: {
-          select: {
-            id: true,
-            title: true,
-            description: true,
-            order: true,
-            lessons: {
-              select: {
-                id: true,
-                title: true,
-                description: true,
-                duration: true,
-                isFree: true,
-                order: true
-              },
-              orderBy: { order: 'asc' }
-            }
-          },
-          orderBy: { order: 'asc' }
-        }
-      }
-    });
-
-    if (!course) {
-      return res.status(404).json({
-        success: false,
-        error: {
-          code: 'COURSE_NOT_FOUND',
-          message: 'Course not found.'
-        }
-      });
-    }
-
-    res.json({
-      success: true,
-      data: course
-    });
-  } catch (error) {
-    logger.error('Get course error:', error);
-    res.status(500).json({
-      success: false,
-      error: {
-        code: 'INTERNAL_ERROR',
-        message: 'Failed to get course.'
-      }
-    });
-  }
-});
-
-// ============================================
-// Authenticated User Endpoints
-// ============================================
-
-/**
  * GET /api/v1/courses/my
  * Get enrolled courses for current user
  */
@@ -192,6 +128,70 @@ router.get('/my', authMiddleware, async (req, res) => {
     });
   }
 });
+
+/**
+ * GET /api/v1/courses/:slug
+ * Get course details by slug
+ */
+router.get('/:slug', async (req, res) => {
+  try {
+    const { slug } = req.params;
+
+    const course = await prisma.course.findFirst({
+      where: { slug, status: 'PUBLISHED' },
+      include: {
+        chapters: {
+          select: {
+            id: true,
+            title: true,
+            description: true,
+            order: true,
+            lessons: {
+              select: {
+                id: true,
+                title: true,
+                description: true,
+                duration: true,
+                isFree: true,
+                order: true
+              },
+              orderBy: { order: 'asc' }
+            }
+          },
+          orderBy: { order: 'asc' }
+        }
+      }
+    });
+
+    if (!course) {
+      return res.status(404).json({
+        success: false,
+        error: {
+          code: 'COURSE_NOT_FOUND',
+          message: 'Course not found.'
+        }
+      });
+    }
+
+    res.json({
+      success: true,
+      data: course
+    });
+  } catch (error) {
+    logger.error('Get course error:', error);
+    res.status(500).json({
+      success: false,
+      error: {
+        code: 'INTERNAL_ERROR',
+        message: 'Failed to get course.'
+      }
+    });
+  }
+});
+
+// ============================================
+// Authenticated User Endpoints
+// ============================================
 
 /**
  * POST /api/v1/courses/:id/enroll

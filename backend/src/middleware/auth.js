@@ -1,4 +1,5 @@
 const jwt = require('jsonwebtoken');
+const { logger } = require('../utils/logger');
 
 const authMiddleware = (req, res, next) => {
   try {
@@ -50,7 +51,7 @@ const authMiddleware = (req, res, next) => {
     }
 
     // Log unexpected errors
-    console.error('Auth middleware error:', error);
+    logger.error('Auth middleware error', { err: error });
     return res.status(500).json({
       success: false,
       error: {
