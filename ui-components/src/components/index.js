@@ -8,3 +8,4 @@ export { default as Badge } from './Badge';
 export { default as Avatar } from './Avatar';
 export { default as Navigation } from './Navigation';
 export { default as Checkbox } from './Checkbox';
+export { default as Modal } from './Modal';
