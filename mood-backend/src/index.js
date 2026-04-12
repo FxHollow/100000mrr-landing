@@ -10,12 +10,14 @@ const rateLimit = require('express-rate-limit');
 
 const { logger } = require('./utils/logger');
 const { notFoundHandler, errorHandler } = require('./middleware/error');
+const { initScheduler } = require('./utils/scheduler');
 
 // 路由
 const authRoutes = require('./routes/auth');
 const moodRoutes = require('./routes/mood');
 const eventRoutes = require('./routes/events');
 const aiRoutes = require('./routes/ai');
+const notificationRoutes = require('./routes/notifications');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -75,6 +77,7 @@ app.use(`/api/${API_VERSION}/auth`, authRoutes);
 app.use(`/api/${API_VERSION}/mood`, moodRoutes);
 app.use(`/api/${API_VERSION}/events`, eventRoutes);
 app.use(`/api/${API_VERSION}/ai`, aiRoutes);
+app.use(`/api/${API_VERSION}/notifications`, notificationRoutes);
 
 // API 信息
 app.get(`/api/${API_VERSION}`, (req, res) => {
@@ -108,6 +111,13 @@ app.get(`/api/${API_VERSION}`, (req, res) => {
           history: `GET /api/${API_VERSION}/ai/history`,
           alerts: `GET /api/${API_VERSION}/ai/alerts`,
         },
+        notifications: {
+          list: `GET /api/${API_VERSION}/notifications`,
+          unreadCount: `GET /api/${API_VERSION}/notifications/unread-count`,
+          markRead: `PATCH /api/${API_VERSION}/notifications/:id/read`,
+          markAllRead: `PATCH /api/${API_VERSION}/notifications/read-all`,
+          delete: `DELETE /api/${API_VERSION}/notifications/:id`,
+        },
       },
     },
   });
@@ -124,6 +134,9 @@ app.listen(PORT, () => {
   logger.info(`服务器启动于端口 ${PORT}，环境：${process.env.NODE_ENV || 'development'}`);
   logger.info(`健康检查：http://localhost:${PORT}/health`);
   logger.info(`API: http://localhost:${PORT}/api/${API_VERSION}`);
+
+  // 初始化定时任务调度器
+  initScheduler();
 });
 
 module.exports = app;
