@@ -1,0 +1,73 @@
+# 情绪管理应用 - Docker Compose 配置
+# 用于本地开发和测试
+
+version: '3.8'
+
+services:
+  # PostgreSQL 数据库
+  postgres:
+    image: postgres:15-alpine
+    container_name: mood-app-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: mood_app
+      POSTGRES_USER: mood_user
+      POSTGRES_PASSWORD: mood_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U mood_user -d mood_app"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Redis 缓存
+  redis:
+    image: redis:7-alpine
+    container_name: mood-app-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # 应用服务
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mood-app-api
+    restart: unless-stopped
+    environment:
+      NODE_ENV: development
+      PORT: 3001
+      DATABASE_URL: postgresql://mood_user:mood_password@postgres:5432/mood_app
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      JWT_SECRET: your-development-jwt-secret-change-in-production
+      JWT_REFRESH_SECRET: your-development-refresh-secret
+    ports:
+      - "3001:3001"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./logs:/app/logs
+      - ./prisma:/app/prisma
+
+volumes:
+  postgres_data:
+  redis_data:
+
+networks:
+  default:
+    name: mood-app-network

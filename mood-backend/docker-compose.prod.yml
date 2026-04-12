@@ -1,0 +1,120 @@
+# 生产环境 Docker Compose 配置
+# 用于阿里云部署
+
+version: '3.8'
+
+services:
+  # Nginx 反向代理
+  nginx:
+    image: nginx:alpine
+    container_name: mood-app-nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+      - ./logs/nginx:/var/log/nginx
+    depends_on:
+      - app
+    networks:
+      - mood-network
+
+  # 应用服务
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mood-app-api
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      PORT: 3001
+      # 数据库配置（生产环境使用 RDS）
+      DATABASE_URL: ${DATABASE_URL}
+      # Redis 配置
+      REDIS_HOST: ${REDIS_HOST:-redis}
+      REDIS_PORT: ${REDIS_PORT:-6379}
+      REDIS_PASSWORD: ${REDIS_PASSWORD}
+      # JWT 配置
+      JWT_SECRET: ${JWT_SECRET}
+      JWT_REFRESH_SECRET: ${JWT_REFRESH_SECRET}
+      # AI 配置
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY}
+      # 微信配置
+      WECHAT_APPID: ${WECHAT_APPID}
+      WECHAT_APP_SECRET: ${WECHAT_APP_SECRET}
+      # 阿里云短信配置
+      ALIYUN_ACCESS_KEY: ${ALIYUN_ACCESS_KEY}
+      ALIYUN_SECRET: ${ALIYUN_SECRET}
+      # 限流配置
+      RATE_LIMIT_WINDOW_MS: 900000
+      RATE_LIMIT_MAX_REQUESTS: 100
+    expose:
+      - "3001"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:3001/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    networks:
+      - mood-network
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "5"
+
+  # PostgreSQL 数据库（开发/测试环境，生产使用 RDS）
+  postgres:
+    image: postgres:15-alpine
+    container_name: mood-app-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: mood_app
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_INITDB_ARGS: "--encoding=UTF8 --lc-collate=C --lc-ctype=C"
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER} -d mood_app"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - mood-network
+
+  # Redis 缓存
+  redis:
+    image: redis:7-alpine
+    container_name: mood-app-redis
+    restart: unless-stopped
+    command: redis-server --requirepass ${REDIS_PASSWORD}
+    expose:
+      - "6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "-a", "${REDIS_PASSWORD}", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - mood-network
+
+volumes:
+  postgres_data:
+  redis_data:
+
+networks:
+  mood-network:
+    name: mood-app-network
+    driver: bridge
